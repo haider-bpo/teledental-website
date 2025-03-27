@@ -6,21 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <!-- Preload critical fonts -->
-    <link
-      rel="preload"
-      href="%PUBLIC_URL%/assets/fonts/Exo-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="%PUBLIC_URL%/assets/fonts/Montserrat-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -72,19 +57,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Teledental</title>
-
-    <!-- Critical CSS inlined for above-the-fold content -->
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/critical.css" />
-
-    <!-- CSS Loader Script to load CSS asynchronously -->
-    <script src="%PUBLIC_URL%/js/css-loader.js"></script>
-
-    <!-- Image Lazy Loader Script -->
-    <script src="%PUBLIC_URL%/js/image-lazy-loader.js"></script>
-
-    <!-- Preload Fonts Script -->
-    <script src="%PUBLIC_URL%/js/preload-fonts.js"></script>
-
     <style>
       #root {
         /* display: flex;
@@ -94,21 +66,26 @@
       }
     </style>
 
-    <!-- Preconnect to external domains -->
+    <!-- Bootstrap CSS -->
     <link
-      rel="preconnect"
-      href="https://stackpath.bootstrapcdn.com"
-      crossorigin
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://unpkg.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- CSS files will be loaded asynchronously by css-loader.js -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/responsive-style.css" /> -->
     <style>
       df-messenger {
         z-index: 999;
@@ -133,52 +110,34 @@
     -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- Defer non-critical scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCECNx6YKAjaYfP9Eq7FXAMB1QmjUKvMZk&libraries=places"></script>
     <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCECNx6YKAjaYfP9Eq7FXAMB1QmjUKvMZk&libraries=places"
-    ></script>
-    <script
-      defer
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
-      defer
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
-      defer
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script defer src="%PUBLIC_URL%/js/script.js"></script>
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-2HS58QE0HC"
-    ></script>
+    <script src="%PUBLIC_URL%/js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HS58QE0HC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      gtag("config", "G-2HS58QE0HC");
+      gtag('config', 'G-2HS58QE0HC');
     </script>
-    <!-- Script Optimizer for deferred loading -->
-    <script src="%PUBLIC_URL%/js/script-optimizer.js"></script>
-    <!-- Dialogflow will be loaded dynamically by script-optimizer.js -->
-    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script> -->
+     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <!-- <df-messenger
       location="us-east1"
       project-id="teledental-383410"
@@ -190,21 +149,22 @@
       chat-title="TeleDental">
       </df-messenger-chat-bubble>
     </df-messenger>  -->
-    <script>
-      window.addEventListener("dfMessengerLoaded", function (event) {
-        $df_messenger = document.querySelector("df-messenger");
-        $df_messenger_chat =
-          $df_messenger.shadowRoot.querySelector("df-messenger-chat");
-
-        var sheet = new CSSStyleSheet();
-        sheet.replaceSync(
-          `div.chat-wrapper.chat-open { height: auto; width:400px; max-height: 450px }`
-        );
-        $df_messenger_chat.shadowRoot.adoptedStyleSheets = [
-          ...$df_messenger_chat.shadowRoot.adoptedStyleSheets,
-          sheet,
-        ];
-      });
-    </script>
+     <script>
+ 
+       window.addEventListener("dfMessengerLoaded", function (event) {
+         $df_messenger = document.querySelector("df-messenger");
+         $df_messenger_chat =
+           $df_messenger.shadowRoot.querySelector("df-messenger-chat");
+ 
+         var sheet = new CSSStyleSheet();
+         sheet.replaceSync(
+           `div.chat-wrapper.chat-open { height: auto; width:400px; max-height: 450px }`
+         );
+         $df_messenger_chat.shadowRoot.adoptedStyleSheets = [
+           ...$df_messenger_chat.shadowRoot.adoptedStyleSheets,
+           sheet,
+         ];
+       });
+     </script>
   </body>
 </html>
