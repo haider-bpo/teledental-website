@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import styles from "./ContactUs.module.css";
-// import contactbg from "../../assets/img/contactbg.webp";
+// import contactbg from "../../assets/img/contactbg.jpg";
 import { Form, Input, Button, Alert } from "antd";
 import { Link } from "react-router-dom";
 import { contactUs } from "../../Auth/apis/authV1";

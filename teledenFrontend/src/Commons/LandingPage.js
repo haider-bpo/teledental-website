@@ -70,7 +70,7 @@ function LandingPage() {
           <div className="col-md-6 col-sm-12 pr-0 featureBottom">
             <img
               className="w-100"
-              src="./assets/img/section-three.webp"
+              src="./assets/img/section-three.jpg"
               alt="loading"
             />
           </div>
@@ -87,7 +87,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-home-tab"
                 >
-                  <img src="./assets/img/grip.webp" alt="loading" />
+                  <img src="./assets/img/grip.jpg" alt="loading" />
                 </div>
                 <div
                   className="tab-pane fade"
@@ -95,7 +95,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-profile-tab"
                 >
-                  <img src="./assets/img/grip.webp" alt="loading" />
+                  <img src="./assets/img/grip.jpg" alt="loading" />
                 </div>
                 <div
                   className="tab-pane fade"
@@ -103,7 +103,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-messages-tab"
                 >
-                  <img src="./assets/img/grip.webp" alt="loading" />
+                  <img src="./assets/img/grip.jpg" alt="loading" />
                 </div>
               </div>
               <div
