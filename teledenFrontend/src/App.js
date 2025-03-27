@@ -125,8 +125,7 @@ function App() {
     new WOW.WOW({
       live: false,
     }).init();
-  }, []);
-  useEffect(() => {
+
     AOS.init({
       duration: 200,
       easing: "ease-in-out",
