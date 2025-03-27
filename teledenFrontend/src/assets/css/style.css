@@ -225,7 +225,7 @@ h2 {
 
 .jumbotron {
   color: #fff;
-  background-image: url("../img/slider.jpeg");
+  background-image: url("../img/slider.webp");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2677,7 +2677,7 @@ textarea.w-select {
     width: 52%;
     height: 675px;
     min-width: 540px;
-    background-image: url("../img/section-three.jpeg");
+    background-image: url("../img/section-three.webp");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3892,7 +3892,7 @@ textarea.w-select {
   width: 52%;
   height: 675px;
   min-width: 540px;
-  background-image: url("../img/section-three.jpeg");
+  background-image: url("../img/section-three.webp");
   background-position: 50% 50%;
 }
 
@@ -4286,7 +4286,7 @@ textarea.w-select {
 
 /* .parallax-section {
   height: 440px;
-  background-image: url("../img/Best-Dental-Answer-Questions-Virtual-Dentistry-Teledentistry-.jpg"), url("../img/pexels-cedric-fauntlero-new.jpg");
+  background-image: url("../img/Best-Dental-Answer-Questions-Virtual-Dentistry-Teledentistry-.webp"), url("../img/pexels-cedric-fauntlero-new.webp");
   background-position: 50%, 50%;
   background-repeat: no-repeat, repeat;
   background-size: cover, cover;
