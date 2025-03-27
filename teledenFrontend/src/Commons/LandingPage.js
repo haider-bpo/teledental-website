@@ -12,7 +12,7 @@ function LandingPage() {
           style={{ height: `${window.innerHeight}px` }}
         >
           <div className="container">
-            <img className="logo" src="./assets/img/logo.webp" alt="loading" />
+            <img rel="preload" className="logo" src="./assets/img/logo.webp" alt="loading" />
             <h1 className="display-4s gadugiBold blue">
               Need Dental Advice? Like to do a <br />
               Live Video Consultation
@@ -69,6 +69,7 @@ function LandingPage() {
           </div>
           <div className="col-md-6 col-sm-12 pr-0 featureBottom">
             <img
+              rel="preload"
               className="w-100"
               src="./assets/img/section-three.jpg"
               alt="loading"
@@ -87,7 +88,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-home-tab"
                 >
-                  <img src="./assets/img/grip.jpg" alt="loading" />
+                  <img rel="preload" src="./assets/img/grip.jpg" alt="loading" />
                 </div>
                 <div
                   className="tab-pane fade"
@@ -95,7 +96,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-profile-tab"
                 >
-                  <img src="./assets/img/grip.jpg" alt="loading" />
+                  <img rel="preload" src="./assets/img/grip.jpg" alt="loading" />
                 </div>
                 <div
                   className="tab-pane fade"
@@ -103,7 +104,7 @@ function LandingPage() {
                   role="tabpanel"
                   aria-labelledby="v-pills-messages-tab"
                 >
-                  <img src="./assets/img/grip.jpg" alt="loading" />
+                  <img rel="preload" src="./assets/img/grip.jpg" alt="loading" />
                 </div>
               </div>
               <div
@@ -189,13 +190,13 @@ function LandingPage() {
           </button>
         </div>
         <div className="sectionFive_bottom text-center">
-          <img src="./assets/img/laptop.webp" alt="loading" />
+          <img rel="preload" src="./assets/img/laptop.webp" alt="loading" />
         </div>
       </section>
       <section className="sectionSix container-fluid">
         <div className="row">
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-01.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-01.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               Dental Implant
             </p>
@@ -215,7 +216,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-02.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-02.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">Tooth Pain</p>
             <label
               className="card_btn mt15 gadugiBold link"
@@ -233,7 +234,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-03.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-03.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               TEETH WHITENING
             </p>
@@ -253,7 +254,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-04.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-04.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               CROWNS & BRIDGES
             </p>
@@ -272,7 +273,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-05.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-05.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">GUM PROBLEM</p>
             <label
               className="card_btn mt15 gadugiBold link"
@@ -290,7 +291,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-06.webp" alt="loading" />
+            <img rel="preload" src="./assets/img/card-06.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               COSMETIC DENTISTRY
             </p>
@@ -320,12 +321,14 @@ function LandingPage() {
             <h2>WANT A SECOND OPINION? HAVE A DENTAL QUESTION?</h2>
             <div className="sectionSeven_bottom">
               <img
+                rel="preload"
                 className="shareItem"
                 src="./assets/img/app-store.webp"
                 alt="loading"
                 style={{ marginRight: "5px" }}
               />
               <img
+                rel="preload"
                 className="shareItem"
                 src="./assets/img/play-store.webp"
                 alt="loading"
@@ -334,6 +337,7 @@ function LandingPage() {
           </div>
           <div className="col-md-4">
             <img
+              rel="preload"
               className="mockupMobile"
               src="./assets/img/mobile-mockup.webp"
               alt="loading"
