@@ -1,0 +1,19 @@
+.h2 {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+}
+.questionsLabel {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.verification_success {
+  max-height: 100vh;
+}
+.btn_redirect {
+  display: flex;
+  button {
+    margin-inline: auto;
+    width: 50%;
+  }
+}

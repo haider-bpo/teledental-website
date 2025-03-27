@@ -1,0 +1,204 @@
+/* These are the bootstrap break points */
+/* This file is created by zain */
+
+@media screen and (min-width: 576px) {
+  .sectionFive_bottom img {
+    max-width: 320px !important;
+  }
+  .sectionFive {
+    padding: 35px 0 155px 0 !important;
+  }
+
+  /* Patient Dashboard */
+
+  .analyticsDash {
+    flex: 0 0 23%;
+    max-width: 23% !important;
+    margin: 0px 0.5%;
+  }
+
+  /* Messages */
+  .ant-drawer > .ant-drawer-content-wrapper {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionSeven {
+    padding: 50px 0 !important;
+    margin: 150px 0 !important;
+  }
+  .mockupMobile {
+    position: absolute !important;
+    top: -17em !important;
+    margin-top: 0 !important;
+    height: 600px !important;
+    max-width: 290px !important;
+  }
+
+  /* Patient Messages */
+
+  /* .messageComponentParentDiv {
+    max-width: 768px !important;
+  } */
+
+  .width100 {
+    max-width: 50% !important;
+  }
+
+  .ViewRequestDetailsButtonDiv {
+    margin-top: 0 !important;
+  }
+
+  .startVideoButton {
+    margin-top: 0 !important;
+  }
+
+  .statsButton {
+    margin-right: 0 !important;
+  }
+
+  /* Dentist Profile */
+
+  .marginTopForMobileViewOnly {
+    margin-top: 0 !important;
+  }
+
+  /* EducationTraingings */
+  .width50ForForItems {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sectionFive_bottom img {
+    max-width: 550px !important;
+  }
+
+  .sectionFive {
+    padding: 35px 0 295px 0 !important;
+  }
+
+  .footer_shareItem {
+    max-width: 180px !important;
+  }
+
+  .sectionTopMargin {
+    margin-top: 120px !important;
+  }
+ 
+  .featureItem {
+    margin-top: 25px !important;
+  }
+
+  /* Patient Messages */
+
+  .inbox {
+    /* max-height: 73vh !important; */
+  }
+
+  /* .messageThreadSelectorParent {
+    max-height: 70vh !important;
+  } */
+
+  /* .messageComponentParentDiv {
+    max-width: 100% !important;
+  } */
+
+  /* .messageThreadSelectorParent {
+    max-width: 40% !important;
+  } */
+
+  .ant-drawer > .ant-drawer-content-wrapper {
+    width: 40% !important;
+  }
+
+  .dentistDescriptionPart {
+    border-bottom: none !important;
+    border-right: 1px solid #d1d1d1;
+  }
+
+  /* Header */
+
+  .navUserCard {
+    margin-top: -5px !important;
+  }
+
+  /* Profile */
+
+  .profileStepper {
+    width: calc(100vw - 310px) !important;
+  }
+
+  .profileSteps {
+    min-width: 1500px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featureItem {
+    margin-top: 30px !important;
+  }
+  .featureItemForAll {
+    font-size: 24px !important;
+    margin-left: 20px !important;
+  }
+  .featureItemImg {
+    padding-top: 10px !important;
+  }
+  .featureItemImg img {
+    width: 30px !important;
+    height: 33px !important;
+  }
+
+  /* Profile */
+
+  .formItems {
+    width: 48% !important;
+  }
+
+  .profileStepper {
+    width: calc(100vw - 370px) !important;
+  }
+
+  /* Patient Messages */
+  /* .messageThreadSelectorParent {
+    max-width: 40% !important;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+  /* .sectionFive_bottom img {
+    top: -750px !important;
+  } */
+
+  .sectionFive_bottom img {
+    /* margin-top: 100px !important; */
+    max-width: 750px !important;
+  }
+
+  .sectionFive {
+    padding: 35px 0 455px 0 !important;
+  }
+
+  /* Messages */
+  .messageToName {
+    margin-left: 0 !important;
+  }
+
+  /* Profile */
+
+  .profileStepper {
+    width: calc(70vw) !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+}
+
+/* These are the custom breakpoints */
+@media screen and (max-width: 576px) {
+  .ant-radio-button-wrapper {
+    font-size: 12px !important;
+  }
+}

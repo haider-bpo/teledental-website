@@ -1,0 +1,20 @@
+.h2 {
+  font-family: "Exo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0071BC;
+  margin-bottom: 0;
+}
+.h2 span {
+  color: #F7A5F9;
+}
+.questionsLabel {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.location_field input {
+  height: 49px;
+  border-radius: 4px;
+}

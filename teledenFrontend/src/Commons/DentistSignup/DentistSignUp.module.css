@@ -1,0 +1,31 @@
+.h2 {
+  font-family: "Exo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0071BC;
+  margin-bottom: 0;
+}
+.h2 span {
+  color: #F7A5F9;
+}
+.questionsLabel {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.cancelBtn,
+.sendBtn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #686767;
+  color: #fff;
+}
+.sendBtn {
+  background-color: #1f2c3d;
+  color: #fff;
+}
+
+.location_field input {
+  height: 49px;
+  border-radius: 4px;
+}

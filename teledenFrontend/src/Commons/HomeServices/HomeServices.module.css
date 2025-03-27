@@ -1,0 +1,57 @@
+
+.services_main{ width: 100%; padding: 40px 0px; }
+
+.services_inner{ width: 100%; }
+
+.services_heading{ text-align: center; padding-bottom: 50px; }
+
+
+
+.services_heading h2{ font-family: 'Montserrat', sans-serif; font-weight: 700; color: #0071bc; font-size: 44px; margin: 0px; line-height:1em; padding-bottom:8px; }
+
+.services_heading h3{ font-weight: 300; color: #f7a5f9; font-size: 26px; line-height:1em; padding-bottom:4px; margin: 0px !important;  }
+
+.services_heading p{ font-weight:700; color: #0071bc; font-size:23px; line-height:1.3em;   margin: 0px; padding-top: 6px;  }
+
+.services_list{ width: 100%; }
+
+.services_list ul{ display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; padding-left: 0px; margin: 0px -30px;} 
+
+.services_list ul li { width: 33.33%; list-style: none; padding:0px 30px 66px 30px;}
+
+.services_box{ width: 100%; display: flex; align-items: flex-start; justify-content: center; }
+
+.services_box span { flex-shrink: 0; width: 106px; height: auto; display: block; margin-right: 18px; }
+
+.services_box span img{ display: block; max-width: none; width: 100%; }
+
+.services_box strong{ font-size: 28px; line-height: 1.2em; font-weight: 500; color: #0071bc; width: 100%; }
+
+.services_box a{ display: inline-block; vertical-align: top; transition: all 0.3s ease; color: #0071bc; padding-top: 6px;   position: relative; }
+
+/* .services_box a{ display: inline-block; vertical-align: top; transition: all 0.3s ease; color: #0071bc; padding-top: 6px; border-top: 3px solid transparent; position: relative; } */
+
+.services_box a:before{ width: 50px; height: 3px; position: absolute; left: 0px; top: 0px; content: ''; background-color: #f7a5f9; transition: all 0.3s ease; opacity: 0; }
+.services_box a:hover:before, .services_box a.active:before{ opacity: 1; width: 100px; }
+/* .services_box a:hover, .services_box a.active{ border-top-color: #f7a5f9;} */
+
+
+
+.sr_btn_row{ width: 100%;}
+.sr_btn_row a{ max-width: 230px; display: block;  margin: auto; text-align: center;}
+
+.services_btn{ padding-top: 3px; padding-bottom: 3px; font-size: 16px; background-color: #0071bc !important; }
+
+
+
+
+@media screen and (max-width:767px) {
+    .services_heading h2{ font-size: 40px !important;}
+    .services_heading h3, .services_heading p{ font-size: 20px !important;}
+    .services_list ul li{ width: 100%; }
+    .services_box strong{ font-size: 24px;}
+
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .services_list ul li{ width: 50%; }
+}
