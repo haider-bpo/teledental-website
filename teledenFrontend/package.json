@@ -67,9 +67,11 @@
   "scripts": {
     "start": "react-app-rewired start  --openssl-legacy-provider",
     "build": "react-app-rewired build  --openssl-legacy-provider",
+    "build:optimized": "npm run optimize-images && react-app-rewired build  --openssl-legacy-provider",
     "test": "react-app-rewired test",
     "sitemap": "babel-node ./src/sitemap-generator.js",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "optimize-images": "bash ./scripts/optimize-images.sh"
   },
   "eslintConfig": {
     "extends": [
