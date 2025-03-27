@@ -12,7 +12,7 @@ function LandingPage() {
           style={{ height: `${window.innerHeight}px` }}
         >
           <div className="container">
-            <img className="logo" src="./assets/img/logo.png" alt="loading" />
+            <img className="logo" src="./assets/img/logo.webp" alt="loading" />
             <h1 className="display-4s gadugiBold blue">
               Need Dental Advice? Like to do a <br />
               Live Video Consultation
@@ -189,13 +189,13 @@ function LandingPage() {
           </button>
         </div>
         <div className="sectionFive_bottom text-center">
-          <img src="./assets/img/laptop.png" alt="loading" />
+          <img src="./assets/img/laptop.webp" alt="loading" />
         </div>
       </section>
       <section className="sectionSix container-fluid">
         <div className="row">
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-01.png" alt="loading" />
+            <img src="./assets/img/card-01.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               Dental Implant
             </p>
@@ -215,7 +215,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-02.png" alt="loading" />
+            <img src="./assets/img/card-02.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">Tooth Pain</p>
             <label
               className="card_btn mt15 gadugiBold link"
@@ -233,7 +233,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-03.png" alt="loading" />
+            <img src="./assets/img/card-03.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               TEETH WHITENING
             </p>
@@ -253,7 +253,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-04.png" alt="loading" />
+            <img src="./assets/img/card-04.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               CROWNS & BRIDGES
             </p>
@@ -272,7 +272,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-05.png" alt="loading" />
+            <img src="./assets/img/card-05.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">GUM PROBLEM</p>
             <label
               className="card_btn mt15 gadugiBold link"
@@ -290,7 +290,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="col-md-4 cardItem">
-            <img src="./assets/img/card-06.png" alt="loading" />
+            <img src="./assets/img/card-06.webp" alt="loading" />
             <p className="card_title mt15 darkBlue gadugiBold">
               COSMETIC DENTISTRY
             </p>
@@ -321,13 +321,13 @@ function LandingPage() {
             <div className="sectionSeven_bottom">
               <img
                 className="shareItem"
-                src="./assets/img/app-store.png"
+                src="./assets/img/app-store.webp"
                 alt="loading"
                 style={{ marginRight: "5px" }}
               />
               <img
                 className="shareItem"
-                src="./assets/img/play-store.png"
+                src="./assets/img/play-store.webp"
                 alt="loading"
               />
             </div>
@@ -335,7 +335,7 @@ function LandingPage() {
           <div className="col-md-4">
             <img
               className="mockupMobile"
-              src="./assets/img/mobile-mockup.png"
+              src="./assets/img/mobile-mockup.webp"
               alt="loading"
             />
           </div>

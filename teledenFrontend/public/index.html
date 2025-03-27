@@ -9,19 +9,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="%PUBLIC_URL%/apple-touch-icon.png"
+      href="%PUBLIC_URL%/apple-touch-icon.webp"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="%PUBLIC_URL%/favicon-32x32.png"
+      href="%PUBLIC_URL%/favicon-32x32.webp"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="%PUBLIC_URL%/favicon-16x16.png"
+      href="%PUBLIC_URL%/favicon-16x16.webp"
     />
     <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
     <link
@@ -83,7 +83,10 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" /> -->
     <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/responsive-style.css" /> -->
     <style>
@@ -129,15 +132,20 @@
     ></script>
     <script src="%PUBLIC_URL%/js/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HS58QE0HC"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2HS58QE0HC"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2HS58QE0HC');
+      gtag("config", "G-2HS58QE0HC");
     </script>
-     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <!-- <df-messenger
       location="us-east1"
       project-id="teledental-383410"
@@ -149,22 +157,21 @@
       chat-title="TeleDental">
       </df-messenger-chat-bubble>
     </df-messenger>  -->
-     <script>
- 
-       window.addEventListener("dfMessengerLoaded", function (event) {
-         $df_messenger = document.querySelector("df-messenger");
-         $df_messenger_chat =
-           $df_messenger.shadowRoot.querySelector("df-messenger-chat");
- 
-         var sheet = new CSSStyleSheet();
-         sheet.replaceSync(
-           `div.chat-wrapper.chat-open { height: auto; width:400px; max-height: 450px }`
-         );
-         $df_messenger_chat.shadowRoot.adoptedStyleSheets = [
-           ...$df_messenger_chat.shadowRoot.adoptedStyleSheets,
-           sheet,
-         ];
-       });
-     </script>
+    <script>
+      window.addEventListener("dfMessengerLoaded", function (event) {
+        $df_messenger = document.querySelector("df-messenger");
+        $df_messenger_chat =
+          $df_messenger.shadowRoot.querySelector("df-messenger-chat");
+
+        var sheet = new CSSStyleSheet();
+        sheet.replaceSync(
+          `div.chat-wrapper.chat-open { height: auto; width:400px; max-height: 450px }`
+        );
+        $df_messenger_chat.shadowRoot.adoptedStyleSheets = [
+          ...$df_messenger_chat.shadowRoot.adoptedStyleSheets,
+          sheet,
+        ];
+      });
+    </script>
   </body>
 </html>

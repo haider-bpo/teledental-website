@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 import DentistSignUpModal from "../Auth/DentistSignUpModal";
 import React from "react";
-import whiteLogo from "../assets/img/white-Text-logo.png";
+import whiteLogo from "../assets/img/white-Text-logo.webp";
 import { Link } from "react-router-dom";
 function Footer() {
   const location = useLocation();
@@ -13,7 +13,11 @@ function Footer() {
   return (
     <footer
       style={{
-        display: location.pathname.includes("messages") || location.pathname.includes("verification-success") ? "none" : "block",
+        display:
+          location.pathname.includes("messages") ||
+          location.pathname.includes("verification-success")
+            ? "none"
+            : "block",
       }}
     >
       <footer className="combine-footer3_component">
@@ -30,7 +34,7 @@ function Footer() {
                       src={whiteLogo}
                       loading="lazy"
                       // sizes="(max-width: 479px) 45vw, (max-width: 767px) 25vw, 193.0078125px"
-                      // srcset="images/white-Text-logo-p-500.png 500w, images/white-Text-logo.png 571w"
+                      // srcset="images/white-Text-logo-p-500.webp 500w, images/white-Text-logo.webp 571w"
                       alt=""
                       className="combine-footer3_logo-vertical"
                     />
@@ -128,47 +132,31 @@ function Footer() {
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/live-teledental-orthodontics-virtual-consult"
-                    }
+                    to={"/live-teledental-orthodontics-virtual-consult"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                      Orthodontics and clear aligners
-                    </li>
+                    <li>Orthodontics and clear aligners</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/live-dentist-ai-teledental"
-                    }
+                    to={"/live-dentist-ai-teledental"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                      Teledental and AI Dental Care
-                    </li>
+                    <li>Teledental and AI Dental Care</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/virtual-tooth-cavity-teledental"
-                    }
+                    to={"/virtual-tooth-cavity-teledental"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                      Tooth Cavity
-                    </li>
+                    <li>Tooth Cavity</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/sleep-wellness-virtual-dental-care"
-                    }
+                    to={"/sleep-wellness-virtual-dental-care"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                      Sleep Wellness Virtual Dental Care
-                    </li>
+                    <li>Sleep Wellness Virtual Dental Care</li>
                   </Link>
                 </div>
                 <div className="uui-footer03_link-list">
@@ -225,46 +213,32 @@ function Footer() {
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/virtual-teledental-root-canal-treatment-info"
-                    }
+                    to={"/virtual-teledental-root-canal-treatment-info"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                    Root canal treatment
-                    </li>
+                    <li>Root canal treatment</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/teeth-sensitivity-and-teledental-sensitive-tooth"
-                    }
+                    to={"/teeth-sensitivity-and-teledental-sensitive-tooth"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                    Teeth Sensitivity and Teledental Sensitive Tooth
-                    </li>
+                    <li>Teeth Sensitivity and Teledental Sensitive Tooth</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/dental-implant-information"
-                    }
+                    to={"/dental-implant-information"}
                     className="uui-footer03_link w-inline-block"
                   >
-                    <li>
-                    Live Dental Implant Questions and Information
-                    </li>
+                    <li>Live Dental Implant Questions and Information</li>
                   </Link>
                   <Link
                     target="_blank"
-                    to={
-                      "/dental-insurance"
-                    }
+                    to={"/dental-insurance"}
                     className="uui-footer03_link w-inline-block"
                   >
                     <li>
-                    Local Dental Insurance and Dental Plan Teledental Info
+                      Local Dental Insurance and Dental Plan Teledental Info
                     </li>
                   </Link>
                 </div>
@@ -275,7 +249,10 @@ function Footer() {
                 <div className="combine-footer3_bottom-text-withoutLC">
                   © 2024 copyright teledental. All rights reserved.
                 </div>
-                <div className="combine-footer3_nav-menu combine-footer3_nav-menu-2" style={{marginRight: "80px"}}>
+                <div
+                  className="combine-footer3_nav-menu combine-footer3_nav-menu-2"
+                  style={{ marginRight: "80px" }}
+                >
                   <a href="#" className="combine-footer3_link">
                     Cookies
                   </a>
@@ -491,7 +468,7 @@ function Footer() {
             <div className="d-flex justify-content-center">
               <img
                 className="footer_shareItem"
-                src="/assets/img/app-store.png"
+                src="/assets/img/app-store.webp"
                 alt="app-store button to download the ios app"
                 style={{ backgroundColor: "white", borderRadius: `4.5px` }}
               />
@@ -499,7 +476,7 @@ function Footer() {
             <div className="d-flex justify-content-center">
               <img
                 className="footer_shareItem play-store-btn"
-                src="/assets/img/play-store.png"
+                src="/assets/img/play-store.webp"
                 alt="play-store button to download the android app"
               />
             </div>

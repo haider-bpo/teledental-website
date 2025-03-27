@@ -1,6 +1,6 @@
 import React from "react";
-import heroBannerIcon from "../assets/img/hm_banner_img1.png";
-//import heroBannerIcon from "../assets/img/hm_banner_img1_1.png";
+import heroBannerIcon from "../assets/img/hm_banner_img1.webp";
+//import heroBannerIcon from "../assets/img/hm_banner_img1_1.webp";
 import SignInModal from "../Auth/SignInModal";
 import { Link } from "react-router-dom";
 import tickIcon from "../assets/svg/arrow-right-sm-svgrepo-com.svg";
@@ -20,7 +20,7 @@ const HeroBanner = () => {
                 className="uui-heroheader01_content-4 order_change_res"
               >
                 <h1 className="uui-heading-xlarge-8 uui_heading_hero">
-                  <span className="d-block">Talk with a Live Dentist on</span>  
+                  <span className="d-block">Talk with a Live Dentist on</span>
                   <label>Teledental.com </label>
 
                   <small> Anywhere, 24/7</small>
@@ -51,7 +51,8 @@ const HeroBanner = () => {
                   </div>
                   <div className="uui-layout08_item-text-wrapper-3">
                     <div className="uui-text-size-large-11">
-                    Professional <strong>online dental consultation</strong> with virtual dentists.
+                      Professional <strong>online dental consultation</strong>{" "}
+                      with virtual dentists.
                     </div>
                   </div>
                 </div>
@@ -63,7 +64,8 @@ const HeroBanner = () => {
                   </div>
                   <div className="uui-layout08_item-text-wrapper-3">
                     <div className="uui-text-size-large-11">
-                    Get <strong>virtual dental help</strong> and find <strong>local dentists near you</strong>. 
+                      Get <strong>virtual dental help</strong> and find{" "}
+                      <strong>local dentists near you</strong>.
                     </div>
                   </div>
                 </div>
@@ -75,7 +77,8 @@ const HeroBanner = () => {
                   </div>
                   <div className="uui-layout08_item-text-wrapper-3">
                     <div className="uui-text-size-large-11">
-                    Schedule a <strong>live dental video consult</strong> with a Teledental dentist.  
+                      Schedule a <strong>live dental video consult</strong> with
+                      a Teledental dentist.
                     </div>
                   </div>
                 </div>
@@ -87,20 +90,18 @@ const HeroBanner = () => {
                   </div>
                   <div className="uui-layout08_item-text-wrapper-3">
                     <div className="uui-text-size-large-11">
-                    Schedule a dental appointment.
+                      Schedule a dental appointment.
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="uui-space-large-8"></div>
                 <div className="brix---buttons-row hero_banner_btn">
                   <div className="brix---button-row-left">
                     <Link
                       className="brix---btn-secondary w-button prim_btn_blue-outlined"
                       // onClick={() => setIsSignInModalVisible(true)}
-                      to={
-                        "/patient-signup"
-                      }
+                      to={"/patient-signup"}
                     >
                       Book Appointment
                     </Link>

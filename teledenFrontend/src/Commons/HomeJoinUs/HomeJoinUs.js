@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./HomeJoinUs.module.css";
 import { Link } from "react-router-dom";
-import img from "../../assets/img/hm_joinus_img.png";
+import img from "../../assets/img/hm_joinus_img.webp";
 
 function HomeJoinUs() {
   return (

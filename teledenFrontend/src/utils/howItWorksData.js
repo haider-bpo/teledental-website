@@ -1,35 +1,35 @@
 //Dentist
-import dentistImg8 from "../assets/img/Dentist/AddChatBot.png";
-import dentistImg16 from "../assets/img/Dentist/AnswerPatients.png";
-import dentistImg3 from "../assets/img/Dentist/DentistSignUp.png";
-import dentistImg5 from "../assets/img/Dentist/DownloadApp.png";
-import dentistImg11 from "../assets/img/Dentist/FilterMessage.png";
-import dentistImg15 from "../assets/img/Dentist/InitiateVC.png";
-import dentistImg2 from "../assets/img/Dentist/ManageProfile (1).png";
-import dentistFeatureImg1 from "../assets/img/Dentist/ManageProfile.png";
-import dentistImg4 from "../assets/img/Dentist/PushNotif_Mobile.png";
-import dentistImg12 from "../assets/img/Dentist/ReviewPatient_Info.png";
-import dentistFeatureImg5 from "../assets/img/DentistFeatureImages/AddChatBot.png";
-import dentistFeatureImg9 from "../assets/img/DentistFeatureImages/AnswerPatients.png";
-import dentistFeatureImg2 from "../assets/img/DentistFeatureImages/DentistSignUp.png";
-import dentistFeatureImg4 from "../assets/img/DentistFeatureImages/DownloadApp.png";
-import dentistFeatureImg6 from "../assets/img/DentistFeatureImages/FilterMessage.png";
-import dentistFeatureImg8 from "../assets/img/DentistFeatureImages/InitiateVC.png";
-import dentistFeatureImg3 from "../assets/img/DentistFeatureImages/PushNotif_Mobile.png";
-import dentistFeatureImg7 from "../assets/img/DentistFeatureImages/ReviewPatient_Info.png";
+import dentistImg8 from "../assets/img/Dentist/AddChatBot.webp";
+import dentistImg16 from "../assets/img/Dentist/AnswerPatients.webp";
+import dentistImg3 from "../assets/img/Dentist/DentistSignUp.webp";
+import dentistImg5 from "../assets/img/Dentist/DownloadApp.webp";
+import dentistImg11 from "../assets/img/Dentist/FilterMessage.webp";
+import dentistImg15 from "../assets/img/Dentist/InitiateVC.webp";
+import dentistImg2 from "../assets/img/Dentist/ManageProfile (1).webp";
+import dentistFeatureImg1 from "../assets/img/Dentist/ManageProfile.webp";
+import dentistImg4 from "../assets/img/Dentist/PushNotif_Mobile.webp";
+import dentistImg12 from "../assets/img/Dentist/ReviewPatient_Info.webp";
+import dentistFeatureImg5 from "../assets/img/DentistFeatureImages/AddChatBot.webp";
+import dentistFeatureImg9 from "../assets/img/DentistFeatureImages/AnswerPatients.webp";
+import dentistFeatureImg2 from "../assets/img/DentistFeatureImages/DentistSignUp.webp";
+import dentistFeatureImg4 from "../assets/img/DentistFeatureImages/DownloadApp.webp";
+import dentistFeatureImg6 from "../assets/img/DentistFeatureImages/FilterMessage.webp";
+import dentistFeatureImg8 from "../assets/img/DentistFeatureImages/InitiateVC.webp";
+import dentistFeatureImg3 from "../assets/img/DentistFeatureImages/PushNotif_Mobile.webp";
+import dentistFeatureImg7 from "../assets/img/DentistFeatureImages/ReviewPatient_Info.webp";
 //Patient
-import patientImg3 from "../assets/img/Patient/CreateNew_Request.png";
-import patientImg5 from "../assets/img/Patient/DentistChat.png";
-import patientImg4 from "../assets/img/Patient/FindNear_Dentist.png";
-import patientImg7 from "../assets/img/Patient/PatientPassword_Reset.png";
-import patientImg2 from "../assets/img/Patient/PatientVC (1).png";
-import patientFeatureImg1 from "../assets/img/Patient/PatientVC.png";
-import patientImg6 from "../assets/img/Patient/RxPrescriptions.png";
-import patientFeatureImg2 from "../assets/img/PatientFeatureImages/CreateNew_Request.png";
-import patientFeatureImg4 from "../assets/img/PatientFeatureImages/DentistChat.png";
-import patientFeatureImg3 from "../assets/img/PatientFeatureImages/FindNear_Dentist.png";
-import patientFeatureImg6 from "../assets/img/PatientFeatureImages/PatientPassword_Reset.png";
-import patientFeatureImg5 from "../assets/img/PatientFeatureImages/RxPrescriptions.png";
+import patientImg3 from "../assets/img/Patient/CreateNew_Request.webp";
+import patientImg5 from "../assets/img/Patient/DentistChat.webp";
+import patientImg4 from "../assets/img/Patient/FindNear_Dentist.webp";
+import patientImg7 from "../assets/img/Patient/PatientPassword_Reset.webp";
+import patientImg2 from "../assets/img/Patient/PatientVC (1).webp";
+import patientFeatureImg1 from "../assets/img/Patient/PatientVC.webp";
+import patientImg6 from "../assets/img/Patient/RxPrescriptions.webp";
+import patientFeatureImg2 from "../assets/img/PatientFeatureImages/CreateNew_Request.webp";
+import patientFeatureImg4 from "../assets/img/PatientFeatureImages/DentistChat.webp";
+import patientFeatureImg3 from "../assets/img/PatientFeatureImages/FindNear_Dentist.webp";
+import patientFeatureImg6 from "../assets/img/PatientFeatureImages/PatientPassword_Reset.webp";
+import patientFeatureImg5 from "../assets/img/PatientFeatureImages/RxPrescriptions.webp";
 
 const dentistFeatures = {
   featureTitle: "Dentist Features:",

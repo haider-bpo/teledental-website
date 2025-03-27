@@ -30,7 +30,7 @@ const messaging = firebase.messaging();
 // const notificationTitle = "Background Message Title";
 // const notificationOptions = {
 //   body: "Background Message body.",
-//   icon: "/firebase-logo.png",
+//   icon: "/firebase-logo.webp",
 // };
 
 // self.registration.showNotification(notificationTitle, notificationOptions);
