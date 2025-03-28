@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import heroBannerIcon from "../assets/img/hm_banner_img1.webp";
 //import heroBannerIcon from "../assets/img/hm_banner_img1_1.webp";
 import SignInModal from "../Auth/SignInModal";
@@ -9,6 +9,24 @@ const HeroBanner = () => {
   const [isVerificationModalVisible, setIsVerificationModalVisible] =
     React.useState(false);
   const [entity, setEntity] = React.useState("");
+
+  // Preload the hero banner image for better LCP
+  useEffect(() => {
+    // Create a link element for preloading the hero image
+    const preloadLink = document.createElement("link");
+    preloadLink.rel = "preload";
+    preloadLink.as = "image";
+    preloadLink.href = heroBannerIcon;
+    preloadLink.type = "image/webp";
+    document.head.appendChild(preloadLink);
+
+    // Clean up function to remove the preload link when component unmounts
+    return () => {
+      if (preloadLink && document.head.contains(preloadLink)) {
+        document.head.removeChild(preloadLink);
+      }
+    };
+  }, []);
   return (
     <>
       <div className="uui-page-padding-18">
@@ -119,9 +137,9 @@ const HeroBanner = () => {
                 </h3> */}
                 <img
                   src={heroBannerIcon}
-                  loading="lazy"
                   alt="Header image"
                   className="uui-heroheader01_image-5"
+                  fetchPriority="high"
                 />
               </div>
             </div>
