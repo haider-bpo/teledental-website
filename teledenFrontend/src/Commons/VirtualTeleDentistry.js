@@ -43,7 +43,7 @@ const VirtualTeleDentistry = () => {
 
       <div className="vtd_top">
         <div className="vtd_banner">
-          <img src={bannerImg} alt="#"></img>
+          <img src={bannerImg} alt=" virtual dentistry"></img>
         </div>
 
         <div className="vtd_content">
@@ -262,7 +262,7 @@ const VirtualTeleDentistry = () => {
               </div>
               <div className="vtd_right">
                 <div className="vtd_rightImg">
-                  <img src={dentisImg} alt="#"></img>
+                  <img src={dentisImg} alt=" dentist logo"></img>
                 </div>
               </div>
             </div>

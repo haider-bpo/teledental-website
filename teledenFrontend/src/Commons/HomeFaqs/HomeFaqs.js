@@ -15,7 +15,7 @@ function HomeFaqs() {
             // data-aos-duration="400"
           >
             <span>
-              <img src={img} alt="#"></img>
+              <img src={img} alt="faq"></img>
             </span>
             {/* <strong>
                              faq

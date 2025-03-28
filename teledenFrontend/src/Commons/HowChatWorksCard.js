@@ -15,7 +15,7 @@ const HowChatWorksCard = ({
         <Col md={18}>
           <div className={`dentistDescriptionPart`}>
             <div style={{ display: "flex", marginBottom: "20px" }}>
-              <img src={data[activeIndex].imageSrc} />
+              <img src={data[activeIndex].imageSrc} alt="dentist Description Part" />
               <div
                 style={{
                   display: "flex",
@@ -95,7 +95,7 @@ const HowChatWorksCard = ({
               }}
               onClick={() => setActiveIndex(index)}
             >
-              <img src={feature.imageSrc} />
+              <img src={feature.imageSrc} alt="features" />
               <Typography style={{ fontSize: "14px", marginLeft: "10px" }}>
                 {feature.text}
               </Typography>

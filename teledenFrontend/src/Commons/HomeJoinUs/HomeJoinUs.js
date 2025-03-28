@@ -28,7 +28,7 @@ function HomeJoinUs() {
               //   data-aos-duration="500"
             >
               <div className={Style.jus_content_img}>
-                <img loading="lazy" src={img} />
+                <img loading="lazy" src={img} alt="join us" />
               </div>
             </div>
             <div

@@ -35,7 +35,7 @@ function Footer() {
                       loading="lazy"
                       // sizes="(max-width: 479px) 45vw, (max-width: 767px) 25vw, 193.0078125px"
                       // srcset="images/white-Text-logo-p-500.webp 500w, images/white-Text-logo.webp 571w"
-                      alt=""
+                      alt="white logo"
                       className="combine-footer3_logo-vertical"
                     />
                   </Link>

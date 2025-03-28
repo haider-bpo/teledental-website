@@ -29,7 +29,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon1} alt="#"></img>
+                                        <img loading="lazy" src={icon1} alt="icon 1"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/live-dentist-ai-teledental`}>
@@ -43,7 +43,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon2} alt="#"></img>
+                                        <img loading="lazy" src={icon2} alt="icon 2"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/virtual-tooth-cavity-teledental`}>
@@ -55,7 +55,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon3} alt="#"></img>
+                                        <img loading="lazy" src={icon3} alt="icon 3"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/live-teledental-orthodontics-virtual-consult`}>
@@ -68,7 +68,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon4} alt="#"></img>
+                                        <img loading="lazy" src={icon4} alt="icon 4"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/local-dental-emergencies-teledental-common-dental-problems-consult`}>
@@ -80,7 +80,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon5} alt="#"></img>
+                                        <img loading="lazy" src={icon5} alt="icon 5"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/cosmetic-teledental-dentistry-teledentistry-treatment-information`}>
@@ -92,7 +92,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon6} alt="#"></img>
+                                        <img loading="lazy" src={icon6} alt="icon 6"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/local-teledentistry-dental-implants-question-info-teledental-dental-implant-answers`}>
@@ -106,7 +106,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon6} alt="#"></img>
+                                        <img loading="lazy" src={icon6} alt="icon 7"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/local-periodontal-questions-about-gum-disease-and-dental-bone-graft-treatment`}>
@@ -118,7 +118,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon8} alt="#"></img>
+                                        <img loading="lazy" src={icon8} alt="icon 8"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/best-teeth-whitening-question-dentist-teledental-dental-veneers-info`}>
@@ -130,7 +130,7 @@ function HomeServices() {
                             <li>
                                 <div className={Style.services_box} data-aos="fade-up" data-aos-once="false">
                                     <span>
-                                        <img loading="lazy" src={icon9} alt="#"></img>
+                                        <img loading="lazy" src={icon9} alt="icon 9"></img>
                                     </span>
                                     <strong>
                                         <Link to={`/local-teledentistry-dental-crown-info-online-teledental-crowns-information`}>

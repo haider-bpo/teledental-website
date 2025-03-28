@@ -35,7 +35,7 @@ const ConfirmEmailVerification = () => {
       <Card>
         <>
           <div className="parent-container">
-            <img width="180" src={logo} alt=""></img>
+            <img width="180" src={logo} alt="logo"></img>
             <div className="verified-text">
               <p>Your account has been verified.</p>
               <p>Thank you.</p>

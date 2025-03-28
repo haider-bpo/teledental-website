@@ -136,7 +136,7 @@ function LandingPageNew() {
                         target="_blank"
                         className="uui-button-26 is-button-large w-inline-block"
                       >
-                        <img src={appStore} loading="lazy" alt="" />
+                        <img src={appStore} loading="lazy" alt="app store icon" />
                       </a>
                     </div>
                     <div className="uui-button-wrapper-14 max-width-full-mobile-landscape">
@@ -145,7 +145,7 @@ function LandingPageNew() {
                         target="_blank"
                         className="uui-button-26 is-button-large w-inline-block"
                       >
-                        <img src={playStore} loading="lazy" alt="" />
+                        <img src={playStore} loading="lazy" alt="play store icon" />
                       </a>
                     </div>
                   </div>

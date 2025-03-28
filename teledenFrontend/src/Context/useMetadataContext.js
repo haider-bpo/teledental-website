@@ -10,6 +10,12 @@ export const MetadataProvider = ({ children }) => {
         "Experience seamless virtual dental care with TeleDental. Book online consultations for all your dental needs today!",
       canonicalUrl: "https://teledental.com/",
     },
+    "/patient-signup": {
+      title: "Patient Signup | Join TeleDental Virtual Care",
+      description:
+        "Sign up for seamless virtual dental care. Create your TeleDental patient account to book online consultations with dental experts.",
+      canonicalUrl: "https://teledental.com/patient-signup",
+    },
     "/best-live-dentist-video-about-us": {
       title: "About TeleDental | Transforming Virtual Dentistry",
       description:
