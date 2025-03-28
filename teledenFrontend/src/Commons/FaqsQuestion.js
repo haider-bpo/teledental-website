@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Form, Input, Button, Alert } from "antd";
 import { contactUs } from "../Auth/apis/authV1";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 const FaqsQuestion = () => {
   const [error, setError] = React.useState("");
   const [loading, setLoading] = React.useState(false);
@@ -37,6 +38,64 @@ const FaqsQuestion = () => {
   };
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Does a virtual Teledental consultation minimize the need for treatment at my local dentist's office?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "After you consult with us and we find out that you have a tooth infection or a dental problem, we'll advise you to visit your local dentist.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Are we currently providing pain medication?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No, we do not at this time.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do we prescribe dental antibiotics?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, we do for some specific cases. However, the patient is responsible for any possible notice of allergic reaction, which is why you must indicate in the patient sign-up form if you have any allergies.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Are the Teledental fees refundable after the virtual consultation?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No, they are not refundable. We can not know whether our dental suggestion will be helpful or not. Anyone using our service should understand that there are no refunds for any teledentistry services provided.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long is the Teledental virtual consultation?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "We try to limit it to 10 minutes. The virtual dental consultation is to go over a specific problem, after which we advise you on the next steps to solve your dental problems, which sometimes involves you visiting your local dental clinic for an in-office complete dental examination and getting your dental imaging x-rays done.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much does the teledental consultation cost?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "It costs $50, and an extra $20 is charged if you need us to prescribe antibiotics. The cost of the prescribed antibiotics is not inclusive of the $20. Note, prices may change - you will see the new prices on the form when making payment.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
       <Header />
       <section className="uui-section_faq01-2 pt-96">
         <div className="uui-page-padding-27">
