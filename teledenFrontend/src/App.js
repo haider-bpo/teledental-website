@@ -5,6 +5,7 @@ import WOW from "wowjs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AppRouter from "./routes";
+import { MetadataProvider } from "./Context/useMetadataContext";
 
 function App() {
   useEffect(() => {
@@ -21,7 +22,11 @@ function App() {
     });
   }, []);
 
-  return <AppRouter />;
+  return (
+    <MetadataProvider>
+      <AppRouter />
+    </MetadataProvider>
+  );
 }
 
 export default App;
