@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function ToothCavity() {
@@ -7,11 +6,7 @@ function ToothCavity() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Tooth Cavity | Teledental"
-					name="Tooth Cavity"
-					content="Tooth Cavity - Live Video Dentist Discussion About Teeth Caries and Dental Treatment Online on Teledental"
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					Virtual Tooth Cavity Information, Live Dentist Video Consultation with
 					Virtual Dentists about Tooth Decay and Teeth Caries

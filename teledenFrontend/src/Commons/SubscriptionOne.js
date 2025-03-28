@@ -1,6 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
-import Header from "./Header";
 
 function SubscriptionOne() {
 	return (

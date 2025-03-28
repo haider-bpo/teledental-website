@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function DentalCrown() {
@@ -7,7 +6,7 @@ function DentalCrown() {
     <div>
       <Header />
       <div
-      className="cosmetic-pd-wrapper footer-center-pages"
+        className="cosmetic-pd-wrapper footer-center-pages"
         // style={{
         //   color: "#000",
         //   maxWidth: "900px",
@@ -15,20 +14,9 @@ function DentalCrown() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Dental Crown | Teledental"
-          name="Dental Crown"
-          content="Dental Crowns Info - Tele Dental Crown Discussion -
-                        Teledentistry Crown Consulting.having a damaged tooth that
-                either causes pain or a bad embarrassing appearance.virtual dental crown teledental consultation."
-        />
-        <h2
-         style={{ textAlign: "center" }}
-        >
-         
-              Dental Crowns Info - Tele Dental Crown Discussion - Teledentistry
-              Crown Consulting
-          
+        <h2 style={{ textAlign: "center" }}>
+          Dental Crowns Info - Tele Dental Crown Discussion - Teledentistry
+          Crown Consulting
         </h2>
         <p>
           If you are undergoing a problem of having a damaged tooth that either

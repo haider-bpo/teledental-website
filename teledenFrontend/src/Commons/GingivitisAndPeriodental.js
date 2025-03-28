@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function GingivitisAndPeriodental() {
@@ -16,14 +15,7 @@ function GingivitisAndPeriodental() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Gingivitis And Periodental | Teledental"
-          name="Gingivitis And Periodental"
-          content="Best Teledentistry Gingivitis and
-                        PeriodontitisTeledental.Online Gingiva Question, Teledental Gingivitis Consulting
-                    and Local Perio Answers. Online Gum Teledental Information - Local Periodontitis
-                    Teledentistry Consulting."
-        />
+        
         <p style={{ textAlign: "center" }}>
           <h2>
             Best Teledentistry Gingivitis and PeriodontitisTeledental

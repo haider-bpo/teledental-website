@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function TermsAndConditions() {
@@ -16,14 +15,7 @@ function TermsAndConditions() {
           margin: " 0 auto 20px",
         }}
       >
-        <HelmetComponent
-          title="Terms And Conditions | Teledental"
-          name="Terms And Conditions"
-          content="Welcome to Teledental. We try our best to provide good dental
-                information for people seeking dental feedback or suggestions.
-                Our goal is to provide good dental information that will
-                hopefully provide useful dental suggestions for individuals."
-        />
+        
         <p
           style={{
             display: "flex",

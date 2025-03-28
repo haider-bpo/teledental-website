@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function LiveDental() {
@@ -7,13 +6,7 @@ function LiveDental() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Live Dental and Dental Implants | Teledental"
-					name="Live Dental"
-					content="Live Dental Dental Implants Talk, Teledentist Dentistry
-          Implant Information, and Virtual Dental Implant
-          Question Answers Online with Teledental.com"
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					Live Dental, Dental Implants Talk, Teledentist Dentistry Implant
 					Information, and Virtual Dental Implant Question Answers Online with

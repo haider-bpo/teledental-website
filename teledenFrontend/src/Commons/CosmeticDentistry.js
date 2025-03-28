@@ -1,5 +1,4 @@
 import Header from "./Header";
-import HelmetComponent from "./HelmetComponent";
 
 function CosmeticDentistry() {
   return (
@@ -15,12 +14,7 @@ function CosmeticDentistry() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Cosmetic Dentsistry | Teledental"
-          name="Cosmetic Dentsistry"
-          content="What is Cosmetic Dentistry? Teledental Cosmetic Dental Care Consult. Many people want to understand how to make their
-                teeth look better cosmetically"
-        />
+        
         <p style={{ textAlign: "center" }}>
           <h2>
             Cosmetic Dentistry

@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function TeethSensitivityAndTeledentalSensitiveTooth() {
@@ -7,11 +6,7 @@ function TeethSensitivityAndTeledentalSensitiveTooth() {
     <div>
       <Header />
       <div className="cosmetic-pd-wrapper footer-center-pages" >
-        <HelmetComponent
-          title="Teeth Sensitivity and Teledental Sensitive Tooth | Teledental"
-          name="Teeth Sensitivity and Teledental Sensitive Tooth"
-          content="Teeth Sensitivity and Teledental Sensitive Tooth"
-        />
+        
         <h2 style={{ textAlign: "center" }}>
           Talk with a Dentist about Dental Erosion Question Answers, Teeth Sensitivity, and Toothache Inquiry Chatting - Virtual Tooth Sensitive Blog 
         </h2>

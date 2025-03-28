@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function DentalEmergencies() {
@@ -16,12 +15,6 @@ function DentalEmergencies() {
           
         // }}
       >
-        <HelmetComponent
-          title="Dental Emergencies | Teledental"
-          name="Dental Emergencies"
-          content="Emergency Teledental Discussion.Common Types of Local Dental Emergencies. chipping a tooth or severe toothache pain can happen for a
-                variety of reasons."
-        />
         <p style={{ textAlign: "center" }}>
           
           <h2 style={{ display: "block" }}>

@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function VPAT() {
@@ -7,14 +6,7 @@ function VPAT() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Voluntary Product
-          Accessibility Template| Teledental"
-					name="Voluntary Product
-          Accessibility Template"
-					content="Virtual Teledental Web Link VPAT - Voluntary Product
-          Accessibility Template for Virtual Dental Care at Teledental"
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					Virtual Teledental Web Link VPAT - Voluntary Product Accessibility
 					Template for Virtual Dental Care at Teledental

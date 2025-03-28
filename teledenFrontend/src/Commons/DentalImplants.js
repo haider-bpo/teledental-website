@@ -1,12 +1,11 @@
 import Header from "./Header";
-import HelmetComponent from "./HelmetComponent";
 
 function DentalImplants() {
   return (
     <div>
       <Header />
       <div
-      className="cosmetic-pd-wrapper footer-center-pages"
+        className="cosmetic-pd-wrapper footer-center-pages"
         // style={{
         //   color: "#000",
         //   maxWidth: "900px",
@@ -14,19 +13,8 @@ function DentalImplants() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Dental Implants | Teledental"
-          name="Dental Implants"
-          content="Teledentistry Dental Implant Question - What is a Dental
-                    Implant.people with one or
-                more missing teeth.dental implants can wear down
-                or need to be replaced from time to time."
-        />
-      
-          <h2 style={{ textAlign: "center" }}>
-            Dental Implants
-          </h2>
-       
+        <h2 style={{ textAlign: "center" }}>Dental Implants</h2>
+
         <h3>
           <>
             Tele Dental Implants Information - Teledental Dental Implant
@@ -59,9 +47,7 @@ function DentalImplants() {
           implant placed into their mouth. These can be general dental
           suggestions and discussions.
         </p>
-        <h3>
-         Dental Implant Advantages Blogging:
-        </h3>
+        <h3>Dental Implant Advantages Blogging:</h3>
         <p>
           Dental Implants have several advantages over dentures. Dental Implants
           are:
@@ -78,10 +64,8 @@ function DentalImplants() {
           have healthy bones so that the implant can bond to the jawbone.
         </p>
         <h3>
-        
-            Local Teledentist Dental Implant Questions - What are the Types of
-            Dental Implants:
-        
+          Local Teledentist Dental Implant Questions - What are the Types of
+          Dental Implants:
         </h3>
         <p>Two main types:</p>
         <ul style={{ listStyle: "decimal" }}>
@@ -107,10 +91,8 @@ function DentalImplants() {
           </p>
         </ul>
         <h3>
-       
-            Teledentist Dental Implant Procedure Chat - How are Dental Implants
-            done?
-          
+          Teledentist Dental Implant Procedure Chat - How are Dental Implants
+          done?
         </h3>
         <p>It usually takes place in three stages:</p>
         <ul style={{ listStyle: "decimal" }}>
@@ -151,10 +133,8 @@ function DentalImplants() {
           remove the crown for cleaning or while sleeping
         </p>
         <h3>
-         
-            Right After Tooth Extraction Dental Implant Teledental Info -
-            Immediate Dental Implants:
-        
+          Right After Tooth Extraction Dental Implant Teledental Info -
+          Immediate Dental Implants:
         </h3>
         <p>
           Also called same day implants, these allow placement of temporary
@@ -185,10 +165,8 @@ function DentalImplants() {
           <li>High success rate of the procedure.</li>
         </ul>
         <h3>
-        
-            Dental Implants Teledentistry Hygiene Discussion - How to take care
-            of Your Dental Implants?
-        
+          Dental Implants Teledentistry Hygiene Discussion - How to take care of
+          Your Dental Implants?
         </h3>
         <ul style={{ listStyle: "decimal" }}>
           <li>

@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 
@@ -16,13 +15,7 @@ function PrivacyPolicy() {
         }}
         className="pt-96"
       >
-        <HelmetComponent
-          title="Privacy Policy | Teledental"
-          name="Privacy Policy"
-          content="ANY COMMUNICATION BY DENTIST OR TELEDENTAL ADMIN DONE WITH
-                    USERS, IS SUBJECTIVE. WE DO <u>NOT</u> ENDORSE OR MANDATE
-                    ANY DENTAL TREATMENT."
-        />
+        
         <p
           style={{
             display: "flex",

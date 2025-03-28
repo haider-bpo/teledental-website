@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function RootCanalTreatment() {
@@ -7,11 +6,7 @@ function RootCanalTreatment() {
     <div>
       <Header />
       <div className="cosmetic-pd-wrapper footer-center-pages" >
-        <HelmetComponent
-          title="Root Canal Treatment | Teledental"
-          name="Root Canal Treatment"
-          content="Root Canal Treatment or Root Canal Therapy (RCT) Virtual Discussion"
-        />
+        
         <h2 style={{ textAlign: "center" }}>
           Root Canal Treatment or Root Canal Therapy (RCT) Virtual Discussion
         </h2>

@@ -13,6 +13,7 @@ import HelmetComponent from "./Commons/HelmetComponent";
 import DentistRoute from "./Routes/DentistRoute";
 import PatientRoute from "./Routes/PatientRoute";
 import PublicRoute from "./Routes/PublicRoute";
+import withMetaData from "./Commons/withMetaData";
 
 // Lazy loaded components
 const SocialAuthentication = lazy(() => import("./Auth/SocialAuthentication"));
@@ -139,282 +140,296 @@ function AppRouter() {
               <PublicRoute
                 exact
                 path="/"
-                component={LandingPageNew}
+                component={withMetaData(LandingPageNew)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
                 exact
                 path="/patient-signup"
-                component={PatientSignUp}
+                component={withMetaData(PatientSignUp)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
                 exact
                 path="/verification-success/:email"
-                component={SignupSuccess}
+                component={withMetaData(SignupSuccess)}
               />
               <PublicRoute
                 exact
                 path="/dentist-signup"
-                component={DentistSignUp}
+                component={withMetaData(DentistSignUp)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
                 exact
                 path="/faqs-question"
-                component={FaqsQuestion}
+                component={withMetaData(FaqsQuestion)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
                 exact
                 path="/contact-us"
-                component={ContactUs}
+                component={withMetaData(ContactUs)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
                 exact
                 path="/auth/callback"
-                component={SocialAuthentication}
+                component={withMetaData(SocialAuthentication)}
               />
               <PublicRoute
                 exact
                 path="/cosmetic-teledental-dentistry-teledentistry-treatment-information"
-                component={CosmeticDentistry}
+                component={withMetaData(CosmeticDentistry)}
               />
               <PublicRoute
                 path="/:userType/forgot-password"
-                component={ForgotPassword}
+                component={withMetaData(ForgotPassword)}
               />
               <PublicRoute
                 exact
                 path="/reset-password"
-                component={ResetPassword}
+                component={withMetaData(ResetPassword)}
               />
               <PublicRoute
                 exact
                 path="/local-dental-emergencies-teledental-common-dental-problems-consult"
-                component={DentalEmergencies}
+                component={withMetaData(DentalEmergencies)}
               />
               <PublicRoute
                 exact
                 path="/local-gingivitis-teledental-periodontal-information-periodontist-consult"
-                component={GingivitisAndPeriodental}
+                component={withMetaData(GingivitisAndPeriodental)}
               />
               <PublicRoute
                 exact
                 path="/tooth-fracture-consult"
-                component={ToothFracture}
+                component={withMetaData(ToothFracture)}
               />
 
               <PublicRoute
                 exact
                 path="/join-virtual-tele-dental-care"
-                component={VirtualTeleDentistry}
+                component={withMetaData(VirtualTeleDentistry)}
               />
               <PublicRoute
                 exact
                 path="/sleep-wellness-virtual-dental-care"
-                component={SleepOralHealth}
+                component={withMetaData(SleepOralHealth)}
               />
               <PublicRoute
                 exact
                 path="/best-teledental-care-local-teledentist-office-information"
-                component={BestTeledental}
+                component={withMetaData(BestTeledental)}
               />
               <PublicRoute
                 exact
                 path="/local-teledentistry-dental-crown-info-online-teledental-crowns-information"
-                component={DentalCrown}
+                component={withMetaData(DentalCrown)}
               />
               <PublicRoute
                 exact
                 path="/live-teledental-orthodontics-virtual-consult"
-                component={OrthodonticsTeledental}
+                component={withMetaData(OrthodonticsTeledental)}
               />
               <PublicRoute
                 exact
                 path="/virtual-teledental-root-canal-treatment-info"
-                component={RootCanalTreatment}
+                component={withMetaData(RootCanalTreatment)}
               />
               <PublicRoute
                 exact
                 path="/best-dentist-promo"
-                component={BestDentistPromo}
+                component={withMetaData(BestDentistPromo)}
               />
               <PublicRoute
                 exact
                 path="/live-dentist-ai-teledental"
-                component={TeledentalAIDentalCare}
+                component={withMetaData(TeledentalAIDentalCare)}
               />
               <PublicRoute
                 exact
                 path="/virtual-tooth-cavity-teledental"
-                component={ToothCavity}
+                component={withMetaData(ToothCavity)}
               />
               <PublicRoute
                 exact
                 path="/local-teledentistry-dental-implants-question-info-teledental-dental-implant-answers"
-                component={DentalImplants}
+                component={withMetaData(DentalImplants)}
               />
               <PublicRoute
                 exact
                 path="/best-teeth-whitening-question-dentist-teledental-dental-veneers-info"
-                component={WhiteningAndVeneers}
+                component={withMetaData(WhiteningAndVeneers)}
               />
               <PublicRoute
                 exact
                 path="/local-teledental-stem-cells-dentistry-care-information"
-                component={DentalStemCell}
+                component={withMetaData(DentalStemCell)}
               />
               <PublicRoute
                 exact
                 path="/local-periodontal-questions-about-gum-disease-and-dental-bone-graft-treatment"
-                component={PeriodontalQuestions}
+                component={withMetaData(PeriodontalQuestions)}
               />
               <PublicRoute
                 exact
                 path="/terms-and-conditions"
-                component={TermsAndConditions}
+                component={withMetaData(TermsAndConditions)}
               />
               <PublicRoute
                 exact
                 path="/best-live-dentist-video-about-us "
-                component={AboutUs}
+                component={withMetaData(AboutUs)}
               />
-              <PublicRoute exact path="/join-us" component={JoinUs} />
-              <PublicRoute exact path="/how-it-works" component={HowItWorks} />
+              <PublicRoute
+                exact
+                path="/join-us"
+                component={withMetaData(JoinUs)}
+              />
+              <PublicRoute
+                exact
+                path="/how-it-works"
+                component={withMetaData(HowItWorks)}
+              />
               <PublicRoute
                 exact
                 path="/privacy-policy-teledental"
-                component={PrivacyPolicy}
+                component={withMetaData(PrivacyPolicy)}
               />
-              <PublicRoute exact path="/sitemap" component={SiteMap} />
+              <PublicRoute
+                exact
+                path="/sitemap"
+                component={withMetaData(SiteMap)}
+              />
               <PublicRoute
                 exact
                 path="/email-verified"
-                component={ConfirmEmailVerification}
+                component={withMetaData(ConfirmEmailVerification)}
               />
               <PublicRoute
                 exact
                 path="/teeth-sensitivity-and-teledental-sensitive-tooth"
-                component={TeethSensitivityandTeledentalSensitiveTooth}
+                component={withMetaData(
+                  TeethSensitivityandTeledentalSensitiveTooth
+                )}
               />
               <PublicRoute
                 exact
                 path="/dental-implant-information"
-                component={LiveDental}
+                component={withMetaData(LiveDental)}
               />
               <PublicRoute
                 exact
                 path="/video-dental-exams"
-                component={VideoDentalExam}
+                component={withMetaData(VideoDentalExam)}
               />
               <PublicRoute
                 exact
                 path="/voluntary-product-accessibility-template"
-                component={VPAT}
+                component={withMetaData(VPAT)}
               />
               <PublicRoute
                 exact
                 path="/dental-insurance"
-                component={DentalInsurance}
+                component={withMetaData(DentalInsurance)}
               />
               <PublicRoute
                 exact
                 path="/best-teledental-dentists-sign-up-subscription-one"
-                component={SubscriptionOne}
+                component={withMetaData(SubscriptionOne)}
               />
               <PublicRoute
                 exact
                 path="/dental-office-sign-up-teledental-subscription"
-                component={SubscriptionSecond}
+                component={withMetaData(SubscriptionSecond)}
               />
               <PublicRoute
                 exact
                 path="/agora-info"
-                component={AgoraInformation}
+                component={withMetaData(AgoraInformation)}
               />
               <PatientRoute
                 exact
                 path="/patients/create-request"
-                component={CreateRequest}
+                component={withMetaData(CreateRequest)}
               />
               <PatientRoute
                 exact
                 path="/patients/dashboard"
-                component={Dashboard}
+                component={withMetaData(Dashboard)}
               />
               <PatientRoute
                 exact
                 path="/patients/request/:id"
-                component={RequestDetails}
+                component={withMetaData(RequestDetails)}
               />
               <PatientRoute
                 exact
                 path="/patients/messages/:id?"
-                component={Inbox}
+                component={withMetaData(Inbox)}
               />
               <PatientRoute
                 exact
                 path="/patients/profile"
-                component={Profile}
+                component={withMetaData(Profile)}
               />
               <PatientRoute
                 exact
                 path="/patients/video-chat/:id"
-                component={PatientVideoChat}
+                component={withMetaData(PatientVideoChat)}
               />
               <PatientRoute
                 exact
                 path="/patients/payment-form"
-                component={PaymentForm}
+                component={withMetaData(PaymentForm)}
               />
               <PatientRoute exact path="/patients/plans" component={Plans} />
               <PatientRoute
                 exact
                 path="/patients/myappointments"
-                component={MyAppointments}
+                component={withMetaData(MyAppointments)}
               />
               <DentistRoute
                 exact
                 path="/dentists/messages/:id?"
-                component={Inbox}
+                component={withMetaData(Inbox)}
               />
               <DentistRoute
                 exact
                 path="/dentists/request/:id"
-                component={RequestDetails}
+                component={withMetaData(RequestDetails)}
               />
               <DentistRoute
                 exact
                 path="/dentists/profile"
-                component={DentistDashboard}
+                component={withMetaData(DentistDashboard)}
               />
               <DentistRoute
                 exact
                 accountIsActivated={false}
                 path="/dentists/identity-verification"
-                component={IdentityVerification}
+                component={withMetaData(IdentityVerification)}
               />
               <DentistRoute
                 exact
                 path="/dentists/video-chat/:id"
-                component={DentistVideoChat}
+                component={withMetaData(DentistVideoChat)}
               />
               <DentistRoute
                 exact
                 path="/dentists/unapproveddentists"
-                component={UnApprovedDentist}
+                component={withMetaData(UnApprovedDentist)}
               />
               <DentistRoute
                 exact
                 path="/dentists/unapprovedappointments"
-                component={UnApprovedAppointments}
+                component={withMetaData(UnApprovedAppointments)}
               />
               <DentistRoute
                 exact
                 path="/dentists/howitworks"
-                component={HowItWork}
+                component={withMetaData(HowItWork)}
               />
             </Elements>
           </Switch>

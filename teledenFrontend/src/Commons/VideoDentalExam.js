@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function VideoDentalExam() {
@@ -7,12 +6,7 @@ function VideoDentalExam() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Video Dental Exams | Teledental"
-					name="Video Dental Exams"
-					content="Video Dental Exams, Live Cosmetic Dentistry Analysis of Your
-          Smile and Virtual Dental Implant Consultations with TeleDental"
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					Video Dental Exams, Live Cosmetic Dentistry Analysis of Your Smile and
 					Virtual Dental Implant Consultations with TeleDental

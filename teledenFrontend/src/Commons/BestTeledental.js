@@ -1,5 +1,4 @@
 import Header from "./Header";
-import HelmetComponent from "./HelmetComponent";
 
 function BestTeledental() {
   return (
@@ -14,11 +13,6 @@ function BestTeledental() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Best Teledental | Teledental"
-          name="Best Teledental"
-          content="Tooth Pain or Urgent Dental Problem.TeleDental is Available 24/7 Dentistry.technology-driven healthcare services."
-        />
         <p style={{ textAlign: "center" }}>
           <h2>
             Tooth Pain or Urgent Dental Problem -<br></br>

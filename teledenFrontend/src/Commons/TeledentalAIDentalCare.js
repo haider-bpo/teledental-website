@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function TeledentalAIDentalCare() {
@@ -7,11 +6,7 @@ function TeledentalAIDentalCare() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Teledental AI Dentail Care | Teledental"
-					name="Teledental AI Dentail Care"
-					content="Teledental AI Dentail Care - How AI Reshapes Dentistry- Advances in Dental Care"
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					How AI Reshapes Dentistry- Advances in Dental Care Treatment and Live
 					Dentist Consultations Online

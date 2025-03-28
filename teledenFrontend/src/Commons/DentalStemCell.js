@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function DentalStemCell() {
@@ -15,14 +14,7 @@ function DentalStemCell() {
         //   margin: "0 auto 20px",
         // }}
       >
-        <HelmetComponent
-          title="Dental Stem Cell | Teledental"
-          name="Dental Stem Cell"
-          content="Stem cells can be present in all of the body's tissues. They
-                assist in the body's development and replenishment.Stem cells
-                are usually concealed among other cells or buried deep inside
-                the body."
-        />
+        
         <p
           style={{
             display: "flex",

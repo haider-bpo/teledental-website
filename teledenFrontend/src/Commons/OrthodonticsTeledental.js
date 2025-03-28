@@ -1,5 +1,4 @@
 import React from "react";
-import HelmetComponent from "./HelmetComponent";
 import Header from "./Header";
 
 function OrthodonticsTeledental() {
@@ -7,11 +6,7 @@ function OrthodonticsTeledental() {
 		<div>
 			<Header />
 			<div className="cosmetic-pd-wrapper footer-center-pages">
-				<HelmetComponent
-					title="Orthodontics Consultation | Teledental"
-					name="Orthodontics Consultation"
-					content="Orthodontics and clear aligners | Orthodontic treatment with braces can significantly improve dental health and the appearance of a person's smile."
-				/>
+				
 				<h2 style={{ textAlign: "center" }}>
 					Live Virtual Orthodontics Consultation, Local Clear Aligners Inquiry,
 					and Local Orthodontist Teledental Information Online

@@ -1,5 +1,4 @@
 import Header from "./Header";
-import HelmetComponent from "./HelmetComponent";
 
 function PeriodontalQuestions() {
   return (
@@ -7,13 +6,7 @@ function PeriodontalQuestions() {
       <Header />
 
       <div className="cosmetic-pd-wrapper footer-center-pages">
-        <HelmetComponent
-          title="Periodontist Questions | Teledental"
-          name="Periodontist Questions"
-          content="Perio problems can be difficult to treat. Periodontal disease can get worse over a period of time
-          if not treated. Virtual periodontal examination and live perio consultation online can provide some useful
-          gum disease information."
-        />
+        
         <h2 style={{ textAlign: "center" }}>
           Teledental Periodontist Questions and Live Perio Consultation - Common Virtual Perio Question Answers Online
         </h2>

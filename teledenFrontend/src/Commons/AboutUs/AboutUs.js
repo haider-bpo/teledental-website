@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import HelmetComponent from "../HelmetComponent";
 import Header from "../Header";
 import styles from "./AboutUs.module.css";
 import { Form, Input, Button, Alert } from "antd";
@@ -50,14 +49,7 @@ function AboutUs() {
 				className="contact-us-section pt-96 px-3"
 			>
 				<div className="pt-4">
-					<HelmetComponent
-						title="About Us | Teledental"
-						name="About Us"
-						content="Teledental.com is leading the way with new virtual dentistry
-                    consulting and more. We are looking at providing useful
-                    local teledentistry info, while using the best virtual
-                    dental technology to that."
-					/>
+					
 					<p
 						style={{
 							display: "flex",
