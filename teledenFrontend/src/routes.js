@@ -9,7 +9,6 @@ import "aos/dist/aos.css";
 // Non-lazy loaded components (used immediately or small in size)
 import ScrollToTop from "./Commons/ScrollToTop";
 import Footer from "./Commons/Footer";
-import HelmetComponent from "./Commons/HelmetComponent";
 import DentistRoute from "./Routes/DentistRoute";
 import PatientRoute from "./Routes/PatientRoute";
 import PublicRoute from "./Routes/PublicRoute";
@@ -123,11 +122,6 @@ function AppRouter() {
   return (
     <Router>
       <ScrollToTop>
-        <HelmetComponent
-          title="Teledental"
-          name="Teledental"
-          content="Teledental"
-        />
         <Suspense fallback={<LoadingFallback />}>
           <Switch>
             <Elements stripe={stripePromise}>

@@ -9,13 +9,14 @@ const withMetaData = (WrappedComponent) => {
     const location = useLocation(); // Get current route
     const metaData = useMetadata(); // Get head details from Context
     const routeMetadata = metaData[location.pathname] || {
-      title: "My React App",
-      description: "A professional React app",
-      canonicalUrl: "https://example.com/default-og-image.jpg",
+      title: "Your Trusted Teledental Care | TeleDental Services",
+      description:
+        "Experience seamless virtual dental care with TeleDental. Book online consultations for all your dental needs today!",
+      canonicalUrl: "https://teledental.com/",
     }; // Fallback for undefined routes
 
     const { title, description, canonicalUrl } = routeMetadata;
-    // const canonicalUrl = `https://example.com${location.pathname}`; // Dynamic URL
+    // const canonicalUrl = `https://teledental.com${location.pathname}`; // Dynamic URL
     const ogImage = "/assets/img/logo.webp";
 
     return (
@@ -48,7 +49,9 @@ const withMetaData = (WrappedComponent) => {
     );
   };
 
-  WithMetaData.displayName = `WithMetaData(${WrappedComponent.name || "Component"})`;
+  WithMetaData.displayName = `WithMetaData(${
+    WrappedComponent.name || "Component"
+  })`;
   return WithMetaData;
 };
 
