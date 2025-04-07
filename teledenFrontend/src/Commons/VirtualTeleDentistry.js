@@ -271,7 +271,6 @@ const VirtualTeleDentistry = () => {
       </div>
 
       <div className="cosmetic-pd-wrapper footer-center-pages pt-0">
-
         <p>
           <h3>Why Join Teledental?</h3>
         </p>

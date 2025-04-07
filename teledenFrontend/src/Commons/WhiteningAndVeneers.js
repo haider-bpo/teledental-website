@@ -6,7 +6,7 @@ function WhiteningAndVeneers() {
     <div>
       <Header />
       <div
-      className="cosmetic-pd-wrapper footer-center-pages"
+        className="cosmetic-pd-wrapper footer-center-pages"
         // style={{
         //   color: "#000",
         //   maxWidth: "900px",
@@ -14,11 +14,8 @@ function WhiteningAndVeneers() {
         //   margin: "0 auto 20px",
         // }}
       >
-        
         <p style={{ textAlign: "center" }}>
-          <h2>
-            Teeth Whitening and Dental Veneers
-          </h2>
+          <h2>Teeth Whitening and Dental Veneers</h2>
         </p>
         <p>
           Many people now desire whiter looking teeth and to not have stains on

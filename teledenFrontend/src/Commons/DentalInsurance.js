@@ -6,6 +6,7 @@ function DentalInsurance() {
     <div>
       <Header />
       <div className="cosmetic-pd-wrapper footer-center-pages">
+        
         <h2 style={{ textAlign: "center" }}>
           Local Virtual Dental Insurance vs Best Discount Dental Plan Discussion
           - Live Teledental Dental Insurance Coverage Information Blog and Local

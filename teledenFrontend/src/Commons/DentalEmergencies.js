@@ -6,20 +6,17 @@ function DentalEmergencies() {
     <div>
       <Header />
       <div
-      className="cosmetic-pd-wrapper footer-center-pages"
+        className="cosmetic-pd-wrapper footer-center-pages"
         // style={{
         //   paddingTop: "140px",
         //   color: "#000",
         //   maxWidth: "900px",
         //   margin: "0 auto 20px",
-          
+
         // }}
       >
         <p style={{ textAlign: "center" }}>
-          
-          <h2 style={{ display: "block" }}>
-            Common Local Dental Emergencies
-          </h2>
+          <h2 style={{ display: "block" }}>Common Local Dental Emergencies</h2>
         </p>
         <p>
           We will be discussing various local dental emergencies and local
@@ -49,9 +46,7 @@ function DentalEmergencies() {
           }}
         >
           <li>
-            <h3>
-              Broken Teeth (Chipped Tooth or Broken Filling):
-            </h3>
+            <h3>Broken Teeth (Chipped Tooth or Broken Filling):</h3>
           </li>
           <p style={{ textIndent: "50px" }}>
             Chipped or broken teeth can result from issues such as a cavity that
@@ -72,9 +67,7 @@ function DentalEmergencies() {
             good dental treatment plan and dental options.
           </p>
           <li>
-            <h3>
-            Tooth Sensitivity - Teledentistry Teeth Sensitivity Chat:
-            </h3>
+            <h3>Tooth Sensitivity - Teledentistry Teeth Sensitivity Chat:</h3>
           </li>
           <p style={{ textIndent: "50px" }}>
             Tooth sensitivity, or dentin hypersensitivity, is a tenderness or
@@ -89,9 +82,7 @@ function DentalEmergencies() {
             Online to get dental suggestions from a local teledental office.
           </p>
           <li>
-            <h3>
-              Tooth Avulsion Teledentistry Info:
-            </h3>
+            <h3>Tooth Avulsion Teledentistry Info:</h3>
           </li>
           <p style={{ textIndent: "50px" }}>
             Tooth avulsion is the full dislocation of a tooth from its socket.
@@ -105,10 +96,8 @@ function DentalEmergencies() {
           </p>
           <li>
             <h3>
-           
-                Orthodontic Problems & Ortho Braces Teledental Emergencies
-                Discussion:
-             
+              Orthodontic Problems & Ortho Braces Teledental Emergencies
+              Discussion:
             </h3>
           </li>
           <p style={{ textIndent: "50px" }}>
@@ -133,10 +122,8 @@ function DentalEmergencies() {
           </p>
           <li>
             <h3>
-              
-                Gum Disease Information. Gum Disease Teledentist Blog -
-                Teledental Gingivitis or Perio Teledentistry Discussion:
-             
+              Gum Disease Information. Gum Disease Teledentist Blog - Teledental
+              Gingivitis or Perio Teledentistry Discussion:
             </h3>
           </li>
           <p style={{ textIndent: "50px" }}>
@@ -155,9 +142,7 @@ function DentalEmergencies() {
           </p>
           <li>
             <h3>
-             
-                Composite Filling Problems - Composite Filling Teledental Blog:
-             
+              Composite Filling Problems - Composite Filling Teledental Blog:
             </h3>
           </li>
           <p style={{ textIndent: "50px" }}>
@@ -175,9 +160,7 @@ function DentalEmergencies() {
             goes to the dental office to get the chipped tooth filling fixed.
           </p>
           <li>
-            <h3>
-              Tooth Abscess - Tooth Infection Teledental Blogging:
-            </h3>
+            <h3>Tooth Abscess - Tooth Infection Teledental Blogging:</h3>
           </li>
           <p style={{ textIndent: "50px" }}>
             A tooth abscess is a pocket of pus that results from bacterial
@@ -193,10 +176,7 @@ function DentalEmergencies() {
           </p>
           <li>
             <h3>
-          
-                Wisdom Teeth Pain - Teledentist Third Molar Tooth Pain
-                Consulting:
-            
+              Wisdom Teeth Pain - Teledentist Third Molar Tooth Pain Consulting:
             </h3>
           </li>
           <p style={{ textIndent: "50px" }}>
@@ -217,11 +197,8 @@ function DentalEmergencies() {
           </p>
         </ul>
         <h3>
-          Summary:{" "}
-         
-            Local Dental Emergencies Teledentistry Consulting and Online Dental
-            Emergency Teledental Discussion.
-          
+          Summary: Local Dental Emergencies Teledentistry Consulting and Online
+          Dental Emergency Teledental Discussion.
         </h3>
         <p>
           We discussed various types of local dental emergencies people may

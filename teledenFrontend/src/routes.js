@@ -13,6 +13,7 @@ import DentistRoute from "./Routes/DentistRoute";
 import PatientRoute from "./Routes/PatientRoute";
 import PublicRoute from "./Routes/PublicRoute";
 import withMetaData from "./Commons/withMetaData";
+import HomeDentist from "./Dentist/HomeDentist";
 
 // Lazy loaded components
 const SocialAuthentication = lazy(() => import("./Auth/SocialAuthentication"));
@@ -424,6 +425,11 @@ function AppRouter() {
                 exact
                 path="/dentists/howitworks"
                 component={withMetaData(HowItWork)}
+              />
+              <PublicRoute
+                exact
+                path="/dentist"
+                component={withMetaData(HomeDentist)}
               />
             </Elements>
           </Switch>

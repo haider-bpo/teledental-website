@@ -15,7 +15,6 @@ function PrivacyPolicy() {
         }}
         className="pt-96"
       >
-        
         <p
           style={{
             display: "flex",

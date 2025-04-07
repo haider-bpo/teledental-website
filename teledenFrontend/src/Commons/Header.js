@@ -163,7 +163,7 @@ function Header({ cssClass }) {
         data-easing="ease"
         data-easing2="ease"
         role="banner"
-        className={`w-nav nav-header-wrapper-transparent ${
+        className={`w-nav py-3 nav-header-wrapper-transparent ${
           isScrolled ? "scrolled" : ""
         } ${cssClass}`}
       >
@@ -294,6 +294,19 @@ function Header({ cssClass }) {
 														How it works
 													</Link>
 												</li> */}
+
+                        <li className="brix---header-nav-list-item-2">
+                          <Link
+                            to="/contact"
+                            name="contact"
+                            className={`brix---header-nav-link-white w-nav-link ${
+                              activeTab === "Contact" && "active selected"
+                            }`}
+                          >
+                            Contact
+                          </Link>
+                        </li>
+
                         <li className="brix---header-nav-list-item-2">
                           <Link
                             to="/join-virtual-tele-dental-care"
@@ -304,11 +317,29 @@ function Header({ cssClass }) {
                             }`}
                             // onClick={() => setIsSignUpModalVisible("patient")}
                           >
-                            Join us dentists / companies
+                            Join Us
+                          </Link>
+                        </li>
+                        <li className="brix---header-nav-list-item-2">
+                          <Link
+                            to="/login"
+                            name="patient"
+                            className={`brix---header-nav-link-white w-nav-link ${
+                              activeTab === "Join Virtual Tele Dental Care" &&
+                              "active selected"
+                            }`}
+                            // onClick={() => setIsSignUpModalVisible("patient")}
+                          >
+                            Log in
                           </Link>
                         </li>
 
-                        <li class="brix---header-nav-list-item-2 dropdown">
+                        <li className="brix---header-nav-list-item-2">
+                          <button className="w-nav-link btn_blue">
+                            Book Appointment
+                          </button>
+                        </li>
+                        {/* <li class="brix---header-nav-list-item-2 dropdown">
                           <span
                             className={`brix---header-nav-link-white w-nav-link ${
                               activeTab === "Patient Signup" ||
@@ -347,7 +378,7 @@ function Header({ cssClass }) {
                               Dentist sign up
                             </Link>
                           </div>
-                        </li>
+                        </li> */}
 
                         {/* <li className="brix---header-nav-list-item-2">
                           <Link
@@ -358,14 +389,14 @@ function Header({ cssClass }) {
                             Sign Up
                           </Link>
                         </li> */}
-                        <li className="brix---header-nav-list-item-2">
+                        {/* <li className="brix---header-nav-list-item-2">
                           <button
                             className="w-nav-link btn_blue"
                             onClick={() => setIsSignInModalVisible(true)}
                           >
                             Sign in
                           </button>
-                        </li>
+                        </li> */}
                       </ul>
                     )}
                   </div>

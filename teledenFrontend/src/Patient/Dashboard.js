@@ -191,7 +191,11 @@ function Dashboard() {
           <Typography.Title level={3} className="d-flex">
             Welcome &nbsp; <span className="capitalize me-2">{user?.name}</span>
             <Tooltip title="Create new request by clicking below box">
-              <img style={{ cursor: "pointer" }} src={infoIcon} alt="info icon"></img>
+              <img
+                style={{ cursor: "pointer" }}
+                src={infoIcon}
+                alt="info icon"
+              ></img>
             </Tooltip>
           </Typography.Title>
           <Button
@@ -299,7 +303,12 @@ function Dashboard() {
                   justifyContent: "space-between",
                 }}
               >
-                <img src={HappyFace} alt="happy face" width="128" height="128" />
+                <img
+                  src={HappyFace}
+                  alt="happy face"
+                  width="128"
+                  height="128"
+                />
                 <Typography.Text>
                   Refer a friend to Teledental. Their healthy smile will reward
                   you both.

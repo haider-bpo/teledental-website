@@ -6,7 +6,7 @@ function GingivitisAndPeriodental() {
     <div>
       <Header />
       <div
-      className="cosmetic-pd-wrapper footer-center-pages"
+        className="cosmetic-pd-wrapper footer-center-pages"
 
         // style={{
         //   color: "#000",
@@ -15,11 +15,8 @@ function GingivitisAndPeriodental() {
         //   margin: "0 auto 20px",
         // }}
       >
-        
         <p style={{ textAlign: "center" }}>
-          <h2>
-            Best Teledentistry Gingivitis and PeriodontitisTeledental
-          </h2>
+          <h2>Best Teledentistry Gingivitis and PeriodontitisTeledental</h2>
         </p>
         <h3>
           <u>

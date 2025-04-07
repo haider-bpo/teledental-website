@@ -22,18 +22,21 @@ function PatientSignUp({
   // setIsVerificationModalVisible,
   // setEntity,
 }) {
-  const [address, setAddress] = React.useState({});
-  const [btnDisabled, setBtnDisabled] = React.useState(true);
-  const history = useHistory();
-  const [loading, setLoading] = React.useState(false);
-  const [error, setError] = React.useState("");
-  const { setToken } = useUserContext();
-  const [isSignInModalVisible, setIsSignInModalVisible] = React.useState(false);
-  const [isSignUpPressed, setIsSignUpPressed] = useState(false);
-  const [isVerificationModalVisible, setIsVerificationModalVisible] =
-    React.useState(false);
-  const [entity, setEntity] = React.useState("");
-  const [form] = Form.useForm();
+	const [address, setAddress] = React.useState({});
+	const [btnDisabled, setBtnDisabled] = React.useState(true);
+	const history = useHistory();
+	const [loading, setLoading] = React.useState(false);
+	const [error, setError] = React.useState("");
+	const { setToken } = useUserContext();
+	const [isSignInModalVisible, setIsSignInModalVisible] = React.useState(false);
+	const [isSignUpPressed, setIsSignUpPressed] = useState(true);
+	const [firstCaptch, setfirstCaptch] = useState(0);
+	const [secondCaptch, setsecondCaptch] = useState(0);
+	const [totalCaptch, setTotalCaptch] = useState("");
+	const [isVerificationModalVisible, setIsVerificationModalVisible] =
+		React.useState(false);
+	const [entity, setEntity] = React.useState("");
+	const [form] = Form.useForm();
 
   const onValuesChange = (changedValues, allValues) => {
     console.log({ allValues });
@@ -58,91 +61,105 @@ function PatientSignUp({
     }
   };
 
-  useEffect(() => {
-    loadCaptchaEnginge(6);
-  }, []);
+	useEffect(() => {
+		//loadCaptchaEnginge(6);
+		generateNumber();
+	}, []);
 
-  const onFinish = async (values) => {
-    try {
-      if (isSignUpPressed) {
-        let user_captcha = document.getElementById("user_captcha_input").value;
-        if (validateCaptcha(user_captcha) == true) {
-          loadCaptchaEnginge(6);
-          document.getElementById("user_captcha_input").value = "";
-          setLoading(true);
-          const res = await signup({ entity: "patients", body: values });
-          // setToken(res?.data?.token);
-          // window.localStorage.setItem("token", res?.data?.token);
-          // setError("");
-          message.success(res.message, 20);
-          // setEntity("patients");
-          history.push("/");
-          setIsModalVisible("");
-          // setIsVerificationModalVisible(true);
-          form.resetFields();
-          setIsSignUpPressed(false);
-        } else {
-          document.getElementById("user_captcha_input").value = "";
-        }
-      } else {
-        setIsSignUpPressed(true);
-      }
-    } catch (error) {
-      setLoading(false);
-      setError(error.errMsg);
-    }
-  };
+	const generateNumber = () => {
+		setfirstCaptch(Math.floor(Math.random() * 10));
+		setsecondCaptch(Math.floor(Math.random() * 10));
+		setTotalCaptch("");
+	};
 
-  return (
-    <>
-      <Header cssClassName="nav-bg-black" />
-      <Form
-        form={form}
-        layout="vertical"
-        name="basic"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        onValuesChange={onValuesChange}
-      >
-        <div className="n_signup_wrapper n_signup_wrapper_patient">
-          <div className="signup-page-box signup-patient-page-box">
-            <div className="signup-page-headline">
-              <h2
-                className={`mb-0 w-100 text-center ${styles.h2}`}
-                style={{ marginTop: "65px" }}
-              >
-                Patient <span>Registration</span>
-              </h2>
-              <p className="text-center fs-6">
-                Let's get started. To request a Teledental video consultation
-                with a dentist, please fill this out. Note that there is a $50
-                charge for a 10-minute or less Teledental live video
-                consultation with a live dentist.{" "}
-              </p>
-              <div
-                className="px-3 text-center py-2"
-                style={{
-                  marginTop: "20px",
-                  fontSize: "22px",
-                  fontWeight: 500,
-                  color: "#0071bc",
-                }}
-              >
-                If already have an account, please
-                <Link
-                  className="d-inline-block mt-0 ml-1 text-decoration-underline"
-                  block
-                  type="primary"
-                  // htmlType="submit"
-                  loading={loading}
-                  size="large"
-                  style={{ color: "#F7A5F9" }}
-                  onClick={() => setIsSignInModalVisible(true)}
-                >
-                  Login
-                </Link>
-              </div>
-            </div>
+	const reload = () => {
+		generateNumber();
+	};
+
+	const onFinish = async (values) => {
+		try {
+			if (isSignUpPressed) {
+				debugger;
+				// let user_captcha = document.getElementById("user_captcha_input").value;
+				// if (validateCaptcha(user_captcha) == true) {
+				if (firstCaptch + secondCaptch == Number(totalCaptch)) {
+					//loadCaptchaEnginge(6);
+					//document.getElementById("user_captcha_input").value = "";
+					setLoading(true);
+					const res = await signup({ entity: "patients", body: values });
+					// setToken(res?.data?.token);
+					// window.localStorage.setItem("token", res?.data?.token);
+					// setError("");
+					message.success(res.message, 20);
+					// setEntity("patients");
+					history.push("/");
+					setIsModalVisible("");
+					// setIsVerificationModalVisible(true);
+					form.resetFields();
+					setIsSignUpPressed(true);
+				} else {
+					//document.getElementById("user_captcha_input").value = "";
+					generateNumber();
+				}
+			} else {
+				setIsSignUpPressed(true);
+			}
+		} catch (error) {
+			setLoading(false);
+			setError(error.errMsg);
+		}
+	};
+
+	return (
+		<>
+			<Header cssClassName="nav-bg-black" />
+			<Form
+				form={form}
+				layout="vertical"
+				name="basic"
+				initialValues={{ remember: true }}
+				onFinish={onFinish}
+				onValuesChange={onValuesChange}
+			>
+				<div className="n_signup_wrapper n_signup_wrapper_patient">
+					<div className="signup-page-box signup-patient-page-box">
+						<div className="signup-page-headline">
+							<h2
+								className={`mb-0 w-100 text-center ${styles.h2}`}
+								style={{ marginTop: "65px" }}
+							>
+								Patient <span>Registration</span>
+							</h2>
+							<p className="text-center fs-6">
+								Let's get started. To request a Teledental video consultation
+								with a dentist, please fill this out. Note that there is a $50
+								charge for a 10-minute or less Teledental live video
+								consultation with a live dentist.{" "}
+							</p>
+							<div
+								className="px-3 text-center py-2"
+								style={{
+									marginTop: "20px",
+									fontSize: "22px",
+									fontWeight: 500,
+									color: "#0071bc",
+								}}
+							>
+								If already have an account, please
+								<Link
+									className="d-inline-block mt-0 ml-1 text-decoration-underline"
+									block
+									type="primary"
+									// htmlType="submit"
+									loading={loading}
+									size="large"
+									style={{ color: "#F7A5F9" }}
+									onClick={() => setIsSignInModalVisible(true)}
+								>
+									Login
+								</Link>
+							</div>
+						</div>
 
             <div
               className={`row d-flex mt-4 right-side-check w-75 m-0 mx-auto ${styles.WrapperRightlable}`}
@@ -547,106 +564,182 @@ function PatientSignUp({
                   </div>
                 </Checkbox.Group>
               </div> */}
-                <div className="col-sm-12 col-md-12">
-                  <div className="form-group">
-                    <Form.Item
-                      name="checkbox"
-                      valuePropName="checked"
-                      rules={[
-                        { required: true, message: "Please accept terms!" },
-                      ]}
-                    >
-                      <Checkbox>
-                        I agree{" "}
-                        <a
-                          href="https://teledental.com/terms-and-conditions"
-                          target="_blank"
-                        >
-                          terms of use
-                        </a>{" "}
-                        and{" "}
-                        <a
-                          href="https://teledental.com/privacy-policy-teledental"
-                          target="_blank"
-                        >
-                          {" "}
-                          privacy policy
-                        </a>
-                        .
-                      </Checkbox>
-                    </Form.Item>
-                  </div>
-                </div>
-              </div>
-              <div style={{ display: isSignUpPressed ? "block" : "none" }}>
-                <div>
-                  <LoadCanvasTemplate />
-                </div>
-                <div className="col mt-3" style={{ marginBottom: "20px" }}>
-                  <div>
-                    <input
-                      placeholder="Enter Captcha Value"
-                      id="user_captcha_input"
-                      name="user_captcha_input"
-                      type="text"
-                    ></input>
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex justify-content-center w-100">
-                <Form.Item>
-                  <Button
-                    className="brix---btn-primary w-button btn-edit mb-2 h-auto"
-                    block
-                    type="primary"
-                    htmlType="submit"
-                    loading={loading}
-                    size="large"
-                    disabled={btnDisabled}
-                  >
-                    Sign up
-                  </Button>
-                </Form.Item>
-              </div>
-              <div class="note__txt">
-                <b>Note:</b> We will need further information before doing any
-                Live Teledental Dentist Video Consultation, so we can best serve
-                you. If you have any immediate medical or dental emergency - you
-                should visit a local dentist or local ER office.
-              </div>
-            </div>
-          </div>
-          <div className="n_signup_vactors" style={{ marginTop: "90px" }}>
-            <Link to="/" className="n_signup_logo mb-4">
-              <img
-                // src={isScrolled ? logoOld : logoNew}
-                src={logoOld}
-                alt="TeleDental"
-              />
-            </Link>
-            <div className="n_signup_img">
-              <h3 class="tagLineText">
-                Live <span>Teledental</span> <br /> Consultation
-              </h3>
-              <img src={bigImg} alt="TeleDental" />
-            </div>
-            <div className="n_signup_img_text">
-              <h2>
-                Talk with a Live Dentist on <span> Teledental.com </span>
-              </h2>
-              <i>Anywhere, 24/7</i>
-            </div>
-          </div>
-        </div>
-      </Form>
-      <SignInModal
-        isModalVisible={isSignInModalVisible}
-        setIsModalVisible={setIsSignInModalVisible}
-        setIsVerificationModalVisible={setIsVerificationModalVisible}
-        setEntity={setEntity}
-      />
-    </>
-  );
+								<div className="col-sm-12 col-md-12">
+									<div className="form-group">
+										<Form.Item
+											name="checkbox"
+											valuePropName="checked"
+											rules={[
+												{ required: true, message: "Please accept terms!" },
+											]}
+										>
+											<Checkbox>
+												I agree{" "}
+												<a
+													href="https://teledental.com/terms-and-conditions"
+													target="_blank"
+												>
+													terms of use
+												</a>{" "}
+												and{" "}
+												<a
+													href="https://teledental.com/privacy-policy-teledental"
+													target="_blank"
+												>
+													{" "}
+													privacy policy
+												</a>
+												.
+											</Checkbox>
+										</Form.Item>
+									</div>
+								</div>
+							</div>
+							<div style={{ display: isSignUpPressed ? "block" : "none" }}>
+								{/* <div>
+									<LoadCanvasTemplate />
+								</div> */}
+								{/* <div
+									className="col mt-3"
+									style={{ marginBottom: "20px" }}
+								>
+									<div>
+										<input
+											placeholder="Enter Captcha Value"
+											id="user_captcha_input"
+											name="user_captcha_input"
+											type="text"
+										></input>
+									</div>
+								</div> */}
+								<div
+									style={{
+										display: isSignUpPressed ? "block" : "none",
+									}}
+								>
+									{/* <div>
+										<LoadCanvasTemplate />
+									</div> */}
+									<div
+										className="col mt-3 d-flex align-items-center gap-2 p-0"
+										style={{ marginBottom: "20px" }}
+									>
+										<Input
+											disabled={true}
+											value={firstCaptch}
+											name="firstCaptcha"
+											type="number"
+											style={{
+												fontWeight: 700,
+												fontWeight: 700,
+												height: "49px",
+												width: "52px",
+												borderRadius: "4px",
+											}}
+										/>{" "}
+										+{" "}
+										<Input
+											disabled={true}
+											type="number"
+											name="secondCaptcha"
+											value={secondCaptch}
+											style={{
+												fontWeight: 700,
+												fontWeight: 700,
+												height: "49px",
+												width: "52px",
+												borderRadius: "4px",
+											}}
+										/>{" "} = {" "}
+										<Input
+											placeholder="Enter the sum"
+											type="number"
+											value={totalCaptch}
+											onChange={(e) => setTotalCaptch(e.target.value)}
+												style={{
+													fontWeight: 700,
+													fontWeight: 700,
+													height: "49px",
+													borderRadius: "4px",
+												}}
+											/>
+										<button
+										onClick={reload}
+										style={{
+											fontSize: "24px",
+											cursor: "pointer",
+											border: "none",
+											background: "none",
+										}}
+										>
+										⭯
+										</button>
+									</div>
+								</div>
+							</div>
+							<div className="d-flex justify-content-center w-100">
+								<Form.Item>
+									<Button
+										className="brix---btn-primary w-button btn-edit mb-2 h-auto"
+										block
+										type="primary"
+										htmlType="submit"
+										loading={loading}
+										size="large"
+										disabled={btnDisabled}
+									>
+										Sign up
+									</Button>
+								</Form.Item>
+							</div>
+							<div class="note__txt">
+								<b>Note:</b> We will need further information before doing any
+								Live Teledental Dentist Video Consultation, so we can best serve
+								you. If you have any immediate medical or dental emergency - you
+								should visit a local dentist or local ER office.
+							</div>
+						</div>
+					</div>
+					<div
+						className="n_signup_vactors"
+						style={{ marginTop: "90px" }}
+					>
+						<Link
+							to="/"
+							className="n_signup_logo mb-4"
+						>
+							<img
+								// src={isScrolled ? logoOld : logoNew}
+								src={logoOld}
+								alt="TeleDental"
+							/>
+						</Link>
+						<div className="n_signup_img">
+							<h3 class="tagLineText">
+								Live <span>Teledental</span> <br /> Consultation
+							</h3>
+							<img
+								src={bigImg}
+								alt="TeleDental"
+							/>
+						</div>
+						<div className="n_signup_img_text">
+							<h2>
+								Talk with a Live Dentist on <span> Teledental.com </span>
+							</h2>
+							<i>Anywhere, 24/7</i>
+						</div>
+					</div>
+				</div>
+			</Form>
+			<SignInModal
+				isModalVisible={isSignInModalVisible}
+				setIsModalVisible={setIsSignInModalVisible}
+				setIsVerificationModalVisible={setIsVerificationModalVisible}
+				setEntity={setEntity}
+			/>
+		</>
+	);
 }
 
 export default PatientSignUp;

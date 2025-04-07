@@ -12,7 +12,7 @@ export const contactUs = async (payload) => {
   return client.post(`/api/v1/contact_us`, payload.body);
 };
 export const forgotPassword = async (payload) => {
-  return client.patch(
+  return client.post(
     `/api/v1/${payload.entity}/auth/forgot-password`,
     payload.body
   );

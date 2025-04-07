@@ -14,11 +14,8 @@ function CosmeticDentistry() {
         //   margin: "0 auto 20px",
         // }}
       >
-        
         <p style={{ textAlign: "center" }}>
-          <h2>
-            Cosmetic Dentistry
-          </h2>
+          <h2>Cosmetic Dentistry</h2>
         </p>
         <h3>What is Cosmetic Dentistry?</h3>
         <p>
@@ -29,10 +26,8 @@ function CosmeticDentistry() {
           variety of dentistry procedures to improve the way your teeth look.
         </p>
         <h3>
-          
-            Teledental Cosmetic Dental Care Consult - Teledentistry Cosmetic
-            dentistry Consulting:
-          
+          Teledental Cosmetic Dental Care Consult - Teledentistry Cosmetic
+          dentistry Consulting:
         </h3>
         <p>
           We will be discussing cosmetic dentistry in this local cosmetic
@@ -83,9 +78,7 @@ function CosmeticDentistry() {
           <li>Dental Onlays</li>
           <li>Dental Implants</li>
         </ul>
-        <h3>
-        Teeth Whitening Teledentistry Blog:
-        </h3>
+        <h3>Teeth Whitening Teledentistry Blog:</h3>
         <p>
           If you suffer from having darkly stained teeth due to smoking, coffee
           stains or other superficial staining, teeth whitening can improve your
@@ -112,9 +105,7 @@ function CosmeticDentistry() {
           sensitive toothpaste prior to the bleaching visit.
         </p>
         <p>
-          <h3>
-           Composite Bonding Teledental Discussion:
-          </h3>
+          <h3>Composite Bonding Teledental Discussion:</h3>
         </p>
         <p>
           Dental composite resin is a tooth-colored restorative material used to
@@ -196,10 +187,8 @@ function CosmeticDentistry() {
         </p>
         <p>
           <h3>
-          
-              Dental Crowns Teledentistry Consulting - Dental Crown Information
-              Online:
-          
+            Dental Crowns Teledentistry Consulting - Dental Crown Information
+            Online:
           </h3>
         </p>
         <p>

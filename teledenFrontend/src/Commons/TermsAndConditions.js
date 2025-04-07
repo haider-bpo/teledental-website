@@ -15,7 +15,6 @@ function TermsAndConditions() {
           margin: " 0 auto 20px",
         }}
       >
-        
         <p
           style={{
             display: "flex",
