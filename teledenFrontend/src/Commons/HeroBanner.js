@@ -37,7 +37,7 @@ const HeroBanner = () => {
                     <Link
                       className="brix---btn-secondary w-button prim_btn_blue-outlined"
                       // onClick={() => setIsSignInModalVisible(true)}
-                      to={"/patient-signup"}
+                      to={"/book-appointment"}
                     >
                       Book Appointment
                     </Link>

@@ -26,9 +26,9 @@ const DentalGuidance = () => {
             Get checked up with Teledental’s virtual consultation. Our dentists
             will provide you the best solutions for your dental problems.
           </p>
-          <Button size="lg" className="btn pink_btn">
+          <button size="lg" className="btn pink_btn">
             Book Now
-          </Button>
+          </button>
         </Col>
       </Row>
     </div>

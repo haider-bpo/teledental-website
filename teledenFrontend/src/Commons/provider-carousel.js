@@ -56,9 +56,9 @@ const ProviderCarousel = () => {
                       </ul>
                     </p>
                     <div className="text-start ps-md-4">
-                      <Button size="lg" className="btn blue_btn mt-5">
+                      <button size="lg" className="btn blue_btn mt-5">
                         Book Now
-                      </Button>
+                      </button>
                     </div>
                   </Col>
                 </Row>
@@ -94,9 +94,9 @@ const ProviderCarousel = () => {
                       </ul>
                     </p> */}
                     <div className="text-start">
-                      <Button size="lg" className="btn blue_btn mt-5">
+                      <button size="lg" className="btn blue_btn mt-5">
                         Register as Dentist
-                      </Button>
+                      </button>
                     </div>
                   </Col>
                 </Row>
@@ -131,9 +131,9 @@ const ProviderCarousel = () => {
                       </ul>
                     </p> */}
                     <div className="text-start">
-                      <Button size="lg" className="btn blue_btn mt-5">
+                      <button size="lg" className="btn blue_btn mt-5">
                         Register as Dentist
-                      </Button>
+                      </button>
                     </div>
                   </Col>
                 </Row>

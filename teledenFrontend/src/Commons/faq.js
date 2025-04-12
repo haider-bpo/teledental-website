@@ -43,7 +43,7 @@ const Faq = () => {
           />
           <div className="input-group w-75 mb-3 mx-auto">
             <input
-              type="text"
+              type="search"
               className="form-control fw-bold"
               placeholder="Search..."
               aria-label="Search"

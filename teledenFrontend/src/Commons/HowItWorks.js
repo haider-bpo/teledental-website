@@ -63,7 +63,7 @@ const HowItWorks = () => {
           <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
             <div>
               <Link
-                className="btn pink_btn "
+                className="btn pink_btn"
                 to={"#"}
               >
                 Find Out More

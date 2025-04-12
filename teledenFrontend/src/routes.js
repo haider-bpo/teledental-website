@@ -100,6 +100,11 @@ const VideoDentalExam = lazy(() => import("./Commons/VideoDentalExam"));
 const VPAT = lazy(() => import("./Commons/VPAT"));
 const AgoraInformation = lazy(() => import("./Commons/AgoraInformation"));
 const SleepOralHealth = lazy(() => import("./Commons/SleepOralHealth"));
+const AppointmentBooking = lazy(() => import("./Commons/AppointmentBooking"));
+const Auth = lazy(() => import("./Commons/auth"));
+const EmailVerification = lazy(() =>
+  import("./Commons/auth/EmailVerification")
+);
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
@@ -140,6 +145,18 @@ function AppRouter() {
               />
               <PublicRoute
                 exact
+                path="/auth"
+                component={withMetaData(Auth)}
+                restrictIfDentistIsNotActivated
+              />
+              <PublicRoute
+                exact
+                path="/verify-email/:email"
+                component={withMetaData(EmailVerification)}
+                // restrictIfDentistIsNotActivated
+              />
+              <PublicRoute
+                exact
                 path="/patient-signup"
                 component={withMetaData(PatientSignUp)}
                 restrictIfDentistIsNotActivated
@@ -153,6 +170,12 @@ function AppRouter() {
                 exact
                 path="/dentist-signup"
                 component={withMetaData(DentistSignUp)}
+                restrictIfDentistIsNotActivated
+              />
+              <PublicRoute
+                exact
+                path="/book-appointment"
+                component={withMetaData(AppointmentBooking)}
                 restrictIfDentistIsNotActivated
               />
               <PublicRoute
@@ -201,7 +224,6 @@ function AppRouter() {
                 path="/tooth-fracture-consult"
                 component={withMetaData(ToothFracture)}
               />
-
               <PublicRoute
                 exact
                 path="/join-virtual-tele-dental-care"

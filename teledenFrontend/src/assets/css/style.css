@@ -1,6 +1,422 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+/* ------------- Appointments booking ------------ */
+
+:root {
+  --primary: #0d6efd;
+  --teledental-blue: #00a2e8;
+  --teledental-pink: #f26baa;
+  --danger: #dc3545;
+}
+
+.booing_form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.booing_form .title {
+  font-family: Mulish;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0071bc;
+}
+
+.booing_form .subtitle {
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #375077;
+}
+
+.booing_form .section_title {
+  font-family: Mulish;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #375077;
+  margin-top: 1.7rem;
+}
+.section_subtitle {
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #375077;
+  text-align: start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  border-radius: 8px !important;
+  border-width: 2px;
+  padding: 22px 10px;
+  font-size: 22px;
+  font-style: italic;
+  background: #ffffff;
+  border: 2px solid #0071bc !important;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+}
+.invalid-feedback {
+  text-align: start;
+}
+
+.cancel_btn {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #bc0000;
+}
+
+.text-primary {
+  color: var(--teledental-blue) !important;
+}
+
+.btn-primary {
+  background-color: var(--teledental-blue) !important;
+  border-color: var(--teledental-blue) !important;
+}
+
+.btn-outline-primary {
+  color: var(--teledental-blue) !important;
+  border-color: var(--teledental-blue) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--teledental-blue) !important;
+  color: white !important;
+}
+
+.bg-primary {
+  background-color: var(--teledental-blue) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.form-control:focus {
+  border-color: var(--teledental-blue);
+  box-shadow: 0 0 0 0.2rem rgba(0, 162, 232, 0.25);
+}
+
+/* Custom styles for the dropdown */
+.dropdown-menu {
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Custom styles for checkbox */
+.form-check-input:checked {
+  background-color: var(--teledental-blue);
+  border-color: var(--teledental-blue);
+}
+
+/* Custom styles for file upload area */
+.upload-area {
+  border: 2px dashed #dee2e6;
+  border-radius: 0.375rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-area:hover {
+  border-color: var(--teledental-blue);
+}
+
+.group_btn {
+  width: 636;
+  height: 44;
+  border-radius: 8px;
+  border-width: 1px;
+  gap: 4px;
+  padding: 4px;
+  background: #ffffff;
+  border: 2px solid #0071bc;
+  box-shadow: 0px 10px 12px -10px #0000001f;
+}
+
+.btn-primary {
+  background: #0071bc !important;
+  border: 1px solid #0071bc !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition: all ease-in-out 0.3;
+  padding: 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background: #0071bc !important;
+  color: #fff !important;
+  border: 1px solid #0071bc !important;
+  padding: 10px;
+}
+
+.btn-outline-primary {
+  background: #fff !important;
+  color: #0071bc !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+  line-height: 24px;
+  border-radius: 6px !important;
+  box-shadow: 0px 3px 3px 0px #6a696940;
+  transition: all ease-in-out 0.3;
+  padding: 4px 12px 4px 12px;
+}
+
+.plus_btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Colors-Background-container-bg-primary, #ffffff);
+  border: 2px solid #ccc;
+  line-height: 1;
+
+  border-color: var(
+    --Component-colors-Utility-Brand-utility-brand-50_alt,
+    #e5f3ff
+  );
+}
+
+.top_heading {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0071bc !important;
+  margin-bottom: 1rem !important;
+}
+.heading_title {
+  font-family: Mulish;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #375077;
+  margin-bottom: 2rem !important;
+}
+
+.payment_heading {
+  font-family: Mulish;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0071bc;
+}
+
+.back_btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #0071bc;
+  animation-duration: 0ms;
+}
+
+.file_upload_title {
+  font-size: 22px;
+}
+
+.hr_line {
+  border-top: 2px solid #0071bc !important;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 2px 4px;
+    font-size: 14px;
+    font-style: italic;
+    background: #ffffff;
+    border: 2px solid #0071bc;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+  }
+
+  .btn-primary {
+    background: #0071bc !important;
+    border: 1px solid #0071bc !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+    font-size: 10px;
+    text-align: center !important;
+    line-height: 24px;
+    border-radius: 6px !important;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: all ease-in-out 0.3;
+    padding: 4px 12px 4px 12px;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:active {
+    background: #0071bc !important;
+    color: #fff !important;
+    border: 1px solid #0071bc !important;
+    padding: 4px 12px 4px 12px;
+  }
+
+  .btn-outline-primary {
+    background: #fff !important;
+    color: #0071bc !important;
+    font-weight: 800 !important;
+    font-size: 10px;
+    text-align: center !important;
+    line-height: 24px;
+    border-radius: 6px !important;
+    box-shadow: 0px 3px 3px 0px #6a696940;
+    transition: all ease-in-out 0.3;
+    padding: 4px 12px 4px 12px;
+  }
+
+  li {
+    font-size: 5px !important;
+  }
+
+  .cancel_btn {
+    font-size: 1rem; /* Smaller font size on mobile */
+    top: auto; /* Remove fixed positioning */
+    left: auto;
+    margin: 0px; /* Add some margin */
+  }
+
+  .btn_blue {
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background: #0071bc;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .booing_form .section_title {
+    font-family: Mulish;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #375077;
+    margin-top: 1.7rem;
+  }
+  .section_subtitle {
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #375077;
+    text-align: start;
+  }
+
+  .top_heading {
+    font-family: Mulish;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #0071bc !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .booing_form .subtitle {
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #375077;
+  }
+
+  .heading_title {
+    font-family: Mulish;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #375077;
+    margin-bottom: 1rem !important;
+  }
+
+  .payment_heading {
+    font-family: Mulish;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0071bc;
+  }
+
+  .file_upload_title {
+    font-size: 12px;
+    color: #375077;
+    font-weight: 500;
+  }
+}
+
+/* -------------------------------------- */
 .col-center {
   margin: 0 auto;
   float: none !important;
@@ -8349,5 +8765,528 @@ input[type="number"] {
 
   .step-circle p {
     display: none;
+  }
+}
+
+/* ==================================================================  Contact Us Page ============================================================== */
+
+.form-control:focus {
+  border-color: #0071bc;
+  box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.25);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.accordion-item {
+  transition: all 0.3s ease;
+}
+
+.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-primary {
+  background-color: #0071bc !important;
+  border-color: #0071bc !important;
+}
+
+.btn-primary:hover {
+  background-color: #005a96 !important;
+  border-color: #005a96 !important;
+}
+
+.text-primary {
+  color: #0071bc !important;
+}
+
+.custom-placeholder::placeholder {
+  color: #555555;
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .accordion-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+/* ==================================================================  Join Us Page ============================================================== */
+
+.join-us-page {
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.join-us-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0071bc;
+  margin-bottom: 0.5rem;
+}
+
+.text-pink {
+  color: #f7a5f9;
+}
+
+.join-us-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.join-form-container {
+  background-color: #fff;
+
+  padding: 2rem;
+}
+
+.submit-btn {
+  background-color: #0071bc !important;
+  border-color: #0071bc !important;
+  border-radius: 30px !important;
+  padding: 0.5rem 2rem !important;
+  height: auto !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 10px rgba(44, 117, 188, 0.2) !important;
+}
+
+.submit-btn:hover {
+  background-color: #1e5c9a !important;
+  border-color: #1e5c9a !important;
+}
+
+.join-teledental-banner {
+  background-color: #0071bc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teledental-icon {
+  width: 50px;
+  height: auto;
+}
+
+.join-teledental-banner h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.section-title {
+  color: #0071bc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #000000 !important;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.accordion-icon {
+  color: #0071bc;
+  font-size: 0.8rem;
+}
+
+.accordion-body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.accordion-content {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.cta-section {
+  margin-top: 60px;
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0071bc;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.teledental-link {
+  color: #0071bc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.teledental-link:hover {
+  text-decoration: underline;
+}
+
+.become-dentist-btn {
+  background-color: #0071bc !important;
+  border-color: #0071bc !important;
+  border-radius: 30px !important;
+  padding: 0.5rem 2rem !important;
+  height: auto !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 10px rgba(44, 117, 188, 0.2) !important;
+  margin-top: 1rem;
+  transition: all 0.3s ease !important;
+}
+
+.become-dentist-btn:hover {
+  background-color: #1e5c9a !important;
+  border-color: #1e5c9a !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 12px rgba(44, 117, 188, 0.3) !important;
+}
+
+.cta-section {
+  margin-top: 150px !important;
+}
+
+.ant-select-selector {
+  height: 50px !important;
+  color: #585c5f !important;
+}
+
+.ant-select-selection-item {
+  line-height: 28px !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .join-us-title {
+    font-size: 1.8rem;
+  }
+
+  .join-us-subtitle {
+    font-size: 1rem;
+  }
+
+  .join-teledental-banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .join-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .join-us-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .submit-btn,
+  .become-dentist-btn {
+    width: 100%;
+  }
+}
+
+/* ================================================================== Footer ============================================================== */
+
+footer {
+  font-family: "Inter", sans-serif;
+  background-color: #1a2433;
+  color: white;
+  padding: 0;
+  width: 100%;
+}
+
+.footer-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Top Navigation */
+.footer-top {
+  padding: 40px 0 20px;
+}
+
+.footer-logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-nav img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-nav {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.footer-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+  color: #4a90e2;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 0 40px;
+}
+
+/* Main Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  margin: 0 3rem;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.footer-heading-second {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Appointment Section */
+.footer-appointment {
+  max-width: 600px;
+  width: 60%;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: white;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.footer-input::placeholder {
+  color: #888;
+}
+
+.footer-button {
+  width: 220px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f7a5f9;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #e06dac;
+}
+
+.footer-social {
+  text-align: right;
+  width: 35%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.social-icon-circle {
+  width: 45px;
+  height: 45px !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon-circle:hover {
+  background-color: #3a7bc8 !important;
+  padding: 10px 0px;
+}
+
+.social-icon-circle i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-combined-legal {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-legal-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.footer-copyright {
+  margin-right: 10px;
+}
+
+.footer-legal-link:hover {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-social {
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-appointment {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+  }
+
+  .footer-combined-legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-heading {
+    font-size: 20px;
+  }
+
+  .footer-button {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }
